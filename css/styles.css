@@ -71,7 +71,6 @@ nav a {
 .logo {
   margin: auto 0;
   padding-left: 2rem;
-  background-color: red;
   display: flex;
   /* flex-direction: column; */
   
@@ -85,13 +84,11 @@ nav a {
 .menu {
   justify-self: end;
   padding-right: 2rem;
-  background-color: yellow;
 }
 
 .nav-menu {
   display: flex;
   margin: auto 0;
-  background-color: rgb(244, 203, 127);
 }
 
 .nav-menu a {
@@ -108,7 +105,8 @@ nav a {
 }
 
 .mobile {
-  color: var(--bckgr-white);
+  color: var(--bckgr-grey-dark);
+  font-size: 1.2rem;
   cursor: pointer;
   display: none;
 }
@@ -128,24 +126,41 @@ nav a {
 @media screen and (max-width: 940px) {
   .nav-menu {
     background-color: var(--black);
-    padding: 2rem;
+    padding: 4rem;
     position: fixed;
-    height: 100%;
     width: 100%;
-    left: -100%;
+    top: -100%;
+    left: 0;
     flex-direction: column;
     transition-duration: .2s;
     align-items: center;
   }
+  .nav-menu span {
+    font-weight: 900;
+    font-size: 1.7rem;
+  }
   .mobile {
     display: block;
+    transition: transform 0.5s;
+    transform: rotate(0deg);
+  }
+  
+  .nav-link {
+    padding: 1rem;
+    font-size: 1.4rem;
   }
   .nav-menu.active {
     left: 0;
+    top: 0;
   }
-  nav {
-    
+  .mobile.active {
+    position: absolute;
+    top: 38px;
+    right: 42px;
+    transition: transform 0.5s;
+    transform: rotate(270deg);
   }
+  
 }
 
 
