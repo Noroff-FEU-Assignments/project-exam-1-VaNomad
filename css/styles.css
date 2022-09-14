@@ -111,6 +111,47 @@ nav a {
 }
 
 
+/* —————————  Footer  ————————————————————————————————————————————— */
+footer {
+  font-family: 'Alumni Sans', sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  background-color: var(--black);
+  color: var(--bg-grey-light);
+  padding-top: 3rem;
+}
+
+footer h1 {
+  font-size: 1.3rem;
+  font-weight: 100;
+  letter-spacing: 11px;
+}
+
+footer span {
+  font-weight: 500;
+}
+
+.foot-container,
+.foot-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.foot-trinket {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: .5rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: .7rem;
+  font-family: 'Alumni Sans', sans-serif;
+  letter-spacing: 4px;
+  padding: 1.5rem 0 .2rem 0;
+}
+
 /* —————————  index.html  ————————————————————————————————————————————— */
 .body-wrapper {
   max-width: 1240px;
@@ -119,7 +160,8 @@ nav a {
 }
 
 .api-container {
-  height: 10rem;
+  height: 1080px;
+  background-color: var(--green);
 }
 
 
