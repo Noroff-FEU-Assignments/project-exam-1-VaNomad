@@ -11,7 +11,7 @@
     font-family: 'Raleway', sans-serif;
 */
 
-/* —————————  Global Styles  ————————— */
+/* —————————  Global Styles  ————————————————————————————————————————————— */
 
 :root {
   --black: #4A4A4A;
@@ -44,23 +44,16 @@ body {
 }
 
 
-/* —————————  index.html  ————————— */
-.container {
-  max-width: 1240px;
-  margin: auto;
-  padding: 0 10px;
-}
-
-/* —————————  nav bar  ————————— */
-
+/* —————————  nav bar  ————————————————————————————————————————————— */
 nav {
   width: 100%;
   min-height: 75px;
   /* background-color: yellow; */
-  border: solid 1px grey;
+  border-bottom: solid 1px grey;
   height: 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
 
 nav h1 {
@@ -72,31 +65,40 @@ nav h1 {
 
 nav a {
   /* background-color: purple; */
-  padding: 0 3rem;
+  padding-left: 3rem;
 }
 
 .logo {
-  color: var(--bckgr-grey-dark);
+  margin: auto 0;
   padding-left: 2rem;
-  /* background-color: red; */
+  background-color: red;
   display: flex;
   /* flex-direction: column; */
-  margin: auto 0;
+  
 }
 
-.menu {
-  justify-self: flex-end;
+.logo h1 {
+  font-size: 1.4rem;
+  color: var(--bckgr-grey-dark);
+}
+
+.nav-menu {
   display: flex;
-  margin: auto;
+  margin: auto 0;
+  background-color: yellow;
 }
 
-.menu span {
+.nav-menu a {
+  
+}
+
+.nav-menu span {
   font-weight: 900;
   font-size: 1.2rem;
 }
 
 .nav-link {
-  
+
 }
 
 .mobile {
@@ -106,4 +108,42 @@ nav a {
 }
 
 
+/* —————————  index.html  ————————————————————————————————————————————— */
+.body-wrapper {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 10px;
+}
 
+
+
+
+/* —————————  Media Queries  ————————————————————————————————————————————— */
+/* @media screen and (max-width: 940px) {
+  .nav-menu {
+    background-color: var(--black);
+    padding: 2rem;
+    position: fixed;
+    width: 100%;
+    left: -100%;
+    flex-direction: column;
+    transition-duration: .2s;
+    align-items: center;
+  }
+  .mobile {
+    display: block;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  nav {
+    
+  }
+}
+
+
+@media screen and (max-width: 680px) {
+  .nav-menu {
+    
+  }
+} */
