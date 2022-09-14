@@ -82,10 +82,16 @@ nav a {
   color: var(--bckgr-grey-dark);
 }
 
+.menu {
+  justify-self: end;
+  padding-right: 2rem;
+  background-color: yellow;
+}
+
 .nav-menu {
   display: flex;
   margin: auto 0;
-  background-color: yellow;
+  background-color: rgb(244, 203, 127);
 }
 
 .nav-menu a {
@@ -119,11 +125,12 @@ nav a {
 
 
 /* —————————  Media Queries  ————————————————————————————————————————————— */
-/* @media screen and (max-width: 940px) {
+@media screen and (max-width: 940px) {
   .nav-menu {
     background-color: var(--black);
     padding: 2rem;
     position: fixed;
+    height: 100%;
     width: 100%;
     left: -100%;
     flex-direction: column;
@@ -146,4 +153,4 @@ nav a {
   .nav-menu {
     
   }
-} */
+}
