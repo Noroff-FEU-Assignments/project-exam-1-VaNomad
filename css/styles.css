@@ -1,6 +1,109 @@
-/* fonts:  
-font-family: 'Alumni Sans', sans-serif;
-font-family: 'Alumni Sans Pinstripe', sans-serif;
-font-family: 'Cormorant Garamond', serif;
-font-family: 'Raleway', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Alumni+Sans:wght@100;200;300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Economica:wght@400;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*  font-family: 'Alumni Sans', sans-serif;
+
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-family: 'Economica', sans-serif;
+
+    font-family: 'Raleway', sans-serif;
 */
+
+/* —————————  Global Styles  ————————— */
+
+:root {
+  --black: #4A4A4A;
+  --red: #DF856E;
+  --paper: #F7F1DA;
+  --yellow: #E3CCA1;
+  --green: #C4C3A9;
+  --bckgr-white:#F2F2EC;
+  --bg-grey-light: #B4B4B4;
+  --bckgr-grey-dark: #959595;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--bckgr-grey-dark);
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+
+/* —————————  index.html  ————————— */
+.container {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+/* —————————  nav bar  ————————— */
+
+nav {
+  width: 100%;
+  min-height: 75px;
+  /* background-color: yellow; */
+  border: solid 1px grey;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+nav h1 {
+  /* color: var(--green); */
+  font-family: 'Economica', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+nav a {
+  /* background-color: purple; */
+  padding: 0 3rem;
+}
+
+.logo {
+  color: var(--bckgr-grey-dark);
+  padding-left: 2rem;
+  /* background-color: red; */
+  display: flex;
+  /* flex-direction: column; */
+  margin: auto 0;
+}
+
+.menu {
+  justify-self: flex-end;
+  display: flex;
+  margin: auto;
+}
+
+.menu span {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  
+}
+
+.mobile {
+  color: var(--bckgr-white);
+  cursor: pointer;
+  display: none;
+}
+
+
+
