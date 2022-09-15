@@ -133,7 +133,7 @@ footer span {
 }
 
 footer hr {
-  /* color: greenyellow; */
+  color: var(--bckgr-grey-dark)
 }
 
 .foot-container,
@@ -218,7 +218,7 @@ footer hr {
   .foot-container {
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 35vw;
+    padding-left: 15vw;
   }
   .mobile-spacer {
     padding-bottom: 1rem;
