@@ -41,7 +41,7 @@ a {
 }
 
 body {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Raleway', serif;
 }
 
 
@@ -56,16 +56,10 @@ nav {
   align-items: center;
 }
 
-nav h1 {
-  
-  font-family: 'Economica', sans-serif;
-  font-size: 2rem;
-  font-weight: 900;
-}
-
 nav a {
   /* background-color: purple; */
-  padding: .5rem;
+  font-size: 1.2rem;
+  padding: .5rem 1rem;
   margin-left: 2.5rem;
 }
 
@@ -78,8 +72,9 @@ nav a {
 }
 
 .logo h1 {
-  font-size: 1.4rem;
-  color: var(--green);
+  font-family: 'Economica', sans-serif;
+  font-size: 2rem;
+  color: var(--bg-grey-darkest);
 }
 
 .menu {
@@ -97,18 +92,19 @@ nav a {
 }
 
 .nav-menu span {
-  font-weight: 900;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.4rem;
 }
 
 .nav-link[aria-current="page"]{
-  text-decoration: underline var(--bckgr-grey-dark) .3rem;
-  text-underline-offset: 0.5rem;
+  background-color: var(--black);
+  color: var(--paper);
+  text-transform: capitalize;
 }
 
 .mobile {
   font-size: 1.3rem;
-  color: var(--bckgr-grey-dark);
+  color: var(--bg-grey-darkest);
   cursor: pointer;
   display: none;
 }
@@ -211,6 +207,7 @@ footer hr {
     right: 42px;
     transition: transform 0.5s;
     transform: rotate(270deg);
+    color: var(--bg-grey-light);
   }
   
 }
