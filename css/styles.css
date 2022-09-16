@@ -168,7 +168,16 @@ footer hr {
   background-color: var(--green);
 }
 
+/* —————————  Carousel  ————————————————————————————————————————————— */
+.carousel {
+  width: 100vw;
+  height: 20rem;
+  position: relative;
+}
 
+.slide {
+  position: absolute;
+}
 
 /* —————————  Media Queries  ————————————————————————————————————————————— */
 @media screen and (max-width: 940px) {
