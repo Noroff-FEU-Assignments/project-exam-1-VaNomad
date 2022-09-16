@@ -5,4 +5,3 @@ document.querySelectorAll(".nav-link").forEach(link => {
   
 })
 
-// forEach(link => {})
