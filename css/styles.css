@@ -65,7 +65,8 @@ nav h1 {
 
 nav a {
   /* background-color: purple; */
-  padding-left: 3rem;
+  padding: .5rem;
+  margin-left: 2.5rem;
 }
 
 .logo {
