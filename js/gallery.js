@@ -1,4 +1,5 @@
-const url = "https://analogflowers.sjur.io/wp-json/wp/v2/categories"
+
+const url = "https://analogflowers.sjur.io/wp-json/wp/v2/pages/235"
 
 const container = document.querySelector(".container");
 const gallery = document.querySelector(".gallery");
@@ -11,7 +12,7 @@ async function createGallery() {
    
     for (let i = 0; i <= data.length; i++) {
       container.innerHTML += `
-      <img src="${data[i].image}"/>
+      <img src="${data[i]}"/>
       <h1>"${data[i].title}"</h1>
       `
     }
@@ -23,3 +24,6 @@ async function createGallery() {
 }
 
 createGallery();
+
+
+
