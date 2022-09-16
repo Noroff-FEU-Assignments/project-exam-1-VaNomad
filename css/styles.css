@@ -100,8 +100,9 @@ nav a {
   font-size: 1.2rem;
 }
 
-.nav-link {
-
+.nav-link[aria-current="page"]{
+  text-decoration: underline var(--bckgr-grey-dark) .3rem;
+  text-underline-offset: 0.5rem;
 }
 
 .mobile {
