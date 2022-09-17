@@ -15,7 +15,7 @@ mobile.addEventListener("click", mobileMenu)
 /* —————————  Posts Carousel  ————————————————————————————————————————————— */
 const url = "https://analogflowers.sjur.io/wp-json/wp/v2/posts?per_page=100&_embed"
 
-const container = document.querySelector(".posts");
+const container = document.querySelector(".carousel");
 
 async function createCarousel() {
   try {
@@ -39,27 +39,20 @@ createCarousel();
 
 function createHtml(data) {
   for (let i = 0; i < data.length; i++) {
-    if (i === 10) {
-      break;
+    if (i === 3) {
+      continue;
     }
     container.innerHTML += `
-                <ul>
-                  <li class="slide" data-active>
-                    <img class="slide" src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
+  
+                  <div class="slide" data-active>
+                    <div>
+                      <img src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
+                    </div>
                     <h1 class="date">"${data[i].title.rendered}"</h1>
                     <p class="exerpt">"${data[i].excerpt.rendered}"</p>
-                  </li>
-                  <li class="slide" data-active>
-                    <img class="slide" src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
-                    <h1 class="date">"${data[i].title.rendered}"</h1>
-                    <p class="exerpt">"${data[i].excerpt.rendered}"</p>
-                  </li>
-                  <li class="slide" data-active>
-                    <img class="slide" src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
-                    <h1 class="date">"${data[i].title.rendered}"</h1>
-                    <p class="exerpt">"${data[i].excerpt.rendered}"</p>
-                  </li>
-                </ul>
+                  </div>
+                
+            
     `
 
   }

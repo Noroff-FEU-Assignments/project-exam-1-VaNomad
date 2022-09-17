@@ -192,23 +192,25 @@ footer span {
 
 /* —————————  Carousel  ————————————————————————————————————————————— */
 .carousel {
-  width: 100vw;
-  height: 20rem;
-  
-}
-
-.carousel ul {
+  width: 80vw;
+  height: 100%;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  border: solid 2px red;
 }
 
 .slide {
+  min-width: 100%;
+  min-height: 100%;
+  
 }
 
 .slide img {
-  width: 200px;
-  height: 200px;
-
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 /* —————————  Media Queries  ————————————————————————————————————————————— */
