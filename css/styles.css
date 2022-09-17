@@ -196,8 +196,10 @@ footer span {
   height: 100%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, 300px);
+  max-height: 440px;
+  overflow: auto;
+  gap: 30px;
   border: solid 2px red;
 }
 
