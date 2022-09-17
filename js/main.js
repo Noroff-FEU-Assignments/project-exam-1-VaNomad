@@ -46,19 +46,18 @@ function createHtml(data) {
                 <ul>
                   <li class="slide" data-active>
                     <img class="slide" src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
-                    <h1 class="date"></h1>
-                    <p class="exerpt"></p>
+                    <h1 class="date">"${data[i].title.rendered}"</h1>
+                    <p class="exerpt">"${data[i].excerpt.rendered}"</p>
                   </li>
-                  <li class="slide">
-                  <img class="slide" src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
-                  <li>
-                    <h1 class="date"></h1>
-                    <p class="exerpt"></p>
+                  <li class="slide" data-active>
+                    <img class="slide" src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
+                    <h1 class="date">"${data[i].title.rendered}"</h1>
+                    <p class="exerpt">"${data[i].excerpt.rendered}"</p>
                   </li>
-                  <li class="slide">
-                  <img class="slide" src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
-                    <h1 class="date"></h1>
-                    <p class="exerpt"></p>
+                  <li class="slide" data-active>
+                    <img class="slide" src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
+                    <h1 class="date">"${data[i].title.rendered}"</h1>
+                    <p class="exerpt">"${data[i].excerpt.rendered}"</p>
                   </li>
                 </ul>
     `

@@ -194,11 +194,21 @@ footer span {
 .carousel {
   width: 100vw;
   height: 20rem;
-  position: relative;
+  
+}
+
+.carousel ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .slide {
-  position: absolute;
+}
+
+.slide img {
+  width: 200px;
+  height: 200px;
+
 }
 
 /* —————————  Media Queries  ————————————————————————————————————————————— */
