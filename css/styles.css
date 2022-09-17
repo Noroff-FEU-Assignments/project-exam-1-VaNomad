@@ -225,6 +225,18 @@ footer span {
   object-fit: cover;
 }
 
+/* —————————  Blog page  ————————————————————————————————————————————— */
+.blog-grid {
+  width: 90vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: auto;
+  gap: 30px;
+  border: solid 2px red;
+}
+
+
 /* —————————  Media Queries  ————————————————————————————————————————————— */
 @media screen and (max-width: 940px) {
   .nav-menu {
