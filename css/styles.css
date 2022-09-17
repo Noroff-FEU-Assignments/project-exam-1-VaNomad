@@ -192,7 +192,7 @@ footer span {
 
 /* —————————  Carousel  ————————————————————————————————————————————— */
 .carousel {
-  width: 80vw;
+  width: 90vw;
   height: 100%;
   margin: auto;
   display: grid;
@@ -202,9 +202,13 @@ footer span {
 }
 
 .slide {
+  margin: 5px;
   min-width: 100%;
   min-height: 100%;
-  
+  background-color: #f5f5f5;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: solid 1px greenyellow;
+
 }
 
 .slide img {

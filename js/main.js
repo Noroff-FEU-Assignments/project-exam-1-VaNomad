@@ -48,9 +48,9 @@ function createHtml(data) {
                     <div>
                       <img src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
                     </div>
-                    <h1 class="date">"${data[i].title.rendered}"</h1>
-                    <p class="exerpt">"${data[i].excerpt.rendered}"</p>
-                  </div>
+                      <h1 class="date">"${data[i].title.rendered}"</h1>
+                      <p class="exerpt">"${data[i].excerpt.rendered}"</p>
+                    </div>
                 
             
     `
