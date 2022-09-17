@@ -40,21 +40,16 @@ createCarousel();
 function createHtml(data) {
   for (let i = 0; i < data.length; i++) {
     if (i === 3) {
-      continue;
+      break;
     }
-    container.innerHTML += `
-  
-                  <div class="slide" data-active>
-                    <div>
-                      <img src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
-                    </div>
+    container.innerHTML += 
+                  `
+                  <a href="details.html?id=${data[i].id}" class="slide">
+                    <img src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
+                    <div>  
                       <h1 class="date">"${data[i].title.rendered}"</h1>
-                      <p class="exerpt">"${data[i].excerpt.rendered}"</p>
                     </div>
-                
-            
-    `
-
+                  </a>
+                  `
   }
-  
 }
