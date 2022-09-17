@@ -138,12 +138,12 @@ footer {
   font-weight: 100;
   letter-spacing: 2px;
   background-color: var(--black);
-  color: var(--bg-grey-light);
+  color: var(--bg-grey-lighter);
   padding-top: 3rem;
 }
 
 footer h1 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 100;
   letter-spacing: 11px;
 }
@@ -152,14 +152,11 @@ footer span {
   font-weight: 500;
 }
 
-footer hr {
-  color: var(--bckgr-grey-dark)
-}
-
 .foot-container,
 .foot-box {
   display: flex;
   justify-content: space-evenly;
+  font-size: 1.3rem;
 }
 
 .foot-trinket {
@@ -167,6 +164,10 @@ footer hr {
   justify-content: space-between;
   flex-direction: column;
   padding-left: .5rem;
+}
+
+.foot-trinket a {
+  color: var(--bg-grey-lighter);
 }
 
 
