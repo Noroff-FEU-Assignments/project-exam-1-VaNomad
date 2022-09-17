@@ -121,7 +121,6 @@ nav a {
 .nav-link[aria-current="page"]{
   background-color: var(--black);
   color: var(--paper);
-  text-transform: capitalize;
 }
 
 .mobile {
