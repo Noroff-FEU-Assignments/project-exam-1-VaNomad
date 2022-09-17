@@ -15,14 +15,15 @@ mobile.addEventListener("click", mobileMenu)
 /* —————————  Posts Carousel  ————————————————————————————————————————————— */
 const url = "https://analogflowers.sjur.io/wp-json/wp/v2/posts?per_page=100"
 
-const container = document.querySelector(".home-container");
+const container = document.querySelector(".posts");
 
 async function createCarousel() {
   try {
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
-   
+    
+    container.innerHTML = "";
   
     for (let i = 0; i < data.length; i++) {
       container.innerHTML += `
@@ -37,3 +38,5 @@ async function createCarousel() {
 }
 
 createCarousel();
+
+

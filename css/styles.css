@@ -21,6 +21,7 @@
   --green: #C4C3A9;
   --bckgr-white:#F2F2EC;
   --bg-grey-light: #B4B4B4;
+  --bg-grey-lighter: #d5d5d5;
   --bckgr-grey-dark: #959595;
   --bg-grey-darkest: #6e6d6d;
 }
@@ -42,6 +43,27 @@ a {
 
 body {
   font-family: 'Raleway', serif;
+}
+
+
+/* —————————  Reusables  ————————————————————————————————————————————— */
+.loader {
+  width: 10rem;
+  height: 10rem;
+  border: 1rem solid var(--bg-grey-lighter);
+  border-bottom: 1rem solid var(--red);
+  border-radius: 100%;
+  animation: infinite spin .5s linear;
+  margin: 10vh auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
