@@ -25,11 +25,18 @@ async function createCarousel() {
     
     container.innerHTML = "";
   
-    for (let i = 0; i < data.length; i++) {
-      container.innerHTML += `
-      <div>"${data[i].id}"</div>
-      `
-    }
+    // for (let i = 0; i < data.length; i++) {
+
+      // if (i === 10) {
+      //   break;
+      // }
+
+      // container.innerHTML += `
+      // <div>"${data[i].id}"</div>
+      // `
+      createHtml(data);
+
+    // }
   } catch (error) {
     console.log(error);
     container.innerHTML = ("The resource can not be found", error)
@@ -40,3 +47,31 @@ async function createCarousel() {
 createCarousel();
 
 
+function createHtml(data) {
+  for (let i = 0; i < data.length; i++) {
+    if (i === 10) {
+      break;
+    }
+    container.innerHTML += `<div>"${data[i].id}"</div>
+    <ul>
+                  <li class="slide" data-active>
+                    <img class="featured-media">
+                    <h1 class="date"></h1>
+                    <p class="exerpt"></p>
+                  </li>
+                  <li class="slide">
+                    <img class="featured-media">
+                    <h1 class="date"></h1>
+                    <p class="exerpt"></p>
+                  </li>
+                  <li class="slide">
+                    <img class="featured-media">
+                    <h1 class="date"></h1>
+                    <p class="exerpt"></p>
+                  </li>
+                </ul>
+    `
+
+  }
+  
+}
