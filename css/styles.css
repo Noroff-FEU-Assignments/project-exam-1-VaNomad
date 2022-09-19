@@ -233,17 +233,19 @@ footer span {
 .slider-container {
 height: 100%;
 width: 100%;
-max-width: 940px;
+
 margin: auto;
+padding: .5rem;
 display: flex;
 overflow: scroll;
 scroll-behavior: smooth;
-/* border: 1px solid greenyellow; */
+border: 1px solid greenyellow;
 }
 
 .slide {
-  min-width: 33.33%;
+  min-width: 30.5%;
   height: 100%;
+  margin: 0 1rem;
   /* border: 1px solid red; */
   background-color: var(--bckgr-white);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
