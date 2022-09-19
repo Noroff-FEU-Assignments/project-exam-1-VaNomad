@@ -13,9 +13,9 @@ mobile.addEventListener("click", mobileMenu)
 
 
 /* —————————  Posts Carousel  ————————————————————————————————————————————— */
-const url = "https://analogflowers.sjur.io/wp-json/wp/v2/posts?per_page=100&_embed"
+const url = "https://analogflowers.sjur.io/wp-json/wp/v2/posts?per_page=20&_embed"
 
-const container = document.querySelector(".carousel");
+const container = document.querySelector(".slider-container");
 
 async function createCarousel() {
   try {
@@ -39,9 +39,6 @@ createCarousel();
 
 function createHtml(data) {
   for (let i = 0; i < data.length; i++) {
-    if (i === 3) {
-      break;
-    }
     container.innerHTML += 
                   `
                   <a href="details.html?id=${data[i].id}" class="slide">
