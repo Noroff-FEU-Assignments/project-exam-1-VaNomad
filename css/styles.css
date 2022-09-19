@@ -209,6 +209,14 @@ footer span {
   padding: 6rem 0rem;
 }
 
+.carousel-wrapper {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  max-width: 1000px;
+}
+
 .carousel {
   height: 100%;
   margin: auto;
@@ -216,7 +224,8 @@ footer span {
   max-height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  overflow: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
   padding: .5rem;
   gap: 30px;
   /* border: solid 2px red; */
