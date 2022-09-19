@@ -35,7 +35,7 @@ createCarousel();
 function createHtml(data) {
   postDetails.innerHTML = 
                   `
-                  <div class="flex">
+                  <div class="details">
                     <h1>${data.date}</h1>
                     <div class="details-image" style="background-image" url("${data.content.rendered}")></div>
                   </div>
