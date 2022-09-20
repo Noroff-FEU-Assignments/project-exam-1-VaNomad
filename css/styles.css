@@ -238,7 +238,7 @@ footer span {
   justify-content: end;
   /* background-color: darkturquoise; */
   z-index: 100;
-  box-shadow: 61px 33px aqua;
+  /* box-shadow: 61px 33px aqua; */
 }
 
 .hero-text {
@@ -255,11 +255,18 @@ footer span {
 
 .symbol-container {
   margin: 15rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .symbol-container h2 {
   font-family: 'Cormorant Garamond', serif;
   color: var(--bg-grey-light);
+  width: 156px;
+  height: 30px;
+  display: flex;
+  justify-content: end;
 }
 
 .text-right-align {
