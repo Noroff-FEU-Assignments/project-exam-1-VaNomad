@@ -128,10 +128,6 @@ nav a {
   margin: auto 0;
 }
 
-.nav-menu a {
-  
-}
-
 .nav-menu span {
   font-weight: 600;
   font-size: 1.4rem;
@@ -215,58 +211,53 @@ footer span {
   align-items: center;
 }
 
-.hero-test {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; 
-}
-
 .hero-left {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 960px;
+  height: 550px;
   margin: 0 auto;
-  
-  padding-bottom: 10rem;
-  
-  /* border: solid 1px red; */
-  
+  align-items: center;
+  /* border: solid 4px red; */
 }
 
 .hero-right {
   display: flex;
   justify-content: end;
-  /* background-color: darkturquoise; */
   z-index: 100;
-  /* box-shadow: 61px 33px aqua; */
+  /* border: solid 4px turquoise; */
 }
 
 .hero-text {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--bg-grey-light);
   display: flex;
   flex-direction: column;
-  /* border: solid 1px red; */
-  width: 300px;
-  height: 200px;
-  justify-content: space-around;
+  /* border: solid 4px gold; */
+  width: 400px;
+  height: 300px;
+  
 }
 
 .symbol-container {
-  margin: 15rem auto 0 auto;
+  width: 100%;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  /* border: solid 4px rgb(47, 85, 255); */
 }
 
 .symbol-container h2 {
   font-family: 'Cormorant Garamond', serif;
   color: var(--bg-grey-light);
-  width: 156px;
+  width: 100%;
   height: 30px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+  /* border: solid 4px red; */
 }
 
 .text-right-align {
@@ -274,10 +265,11 @@ footer span {
 }
 
 .symbol {
-  height: 80px;
+  height: 90px;
+  padding-right: 35px;
+  padding-bottom: 4px;
   position: absolute;
-  opacity: 26%;
-
+  opacity: 20%;
 }
 
 .hero-img-behind {
@@ -317,19 +309,6 @@ footer span {
   margin: 0 auto;
   max-width: 80%;
 }
-/* 
-.carousel {
-  height: 100%;
-  margin: auto;
-  
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: .5rem;
-  gap: 30px;
-  /* border: solid 2px red; 
- } */
 
 .slider-container {
 height: 100%;
@@ -372,6 +351,7 @@ scroll-behavior: smooth;
 }
 
 .arrows {
+  color: var(--bg-grey-lighter);
   font-size: 30px;
   cursor: pointer;
 }
