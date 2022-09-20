@@ -277,8 +277,7 @@ footer span {
   height: 80px;
   position: absolute;
   opacity: 26%;
-  top: 28.7rem;
-  right: 57.7rem;
+
 }
 
 .hero-img-behind {
@@ -307,7 +306,7 @@ footer span {
 /* ————————— <section class="posts"> */
 
 .posts {
-  background-color: var(--bg-grey-lighter);
+  background-color: var(--black);
   padding: 6rem 0rem;
 }
 
