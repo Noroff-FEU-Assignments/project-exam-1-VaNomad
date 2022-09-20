@@ -39,6 +39,9 @@ createCarousel();
 
 function createHtml(data) {
   for (let i = 0; i < data.length; i++) {
+    if (i === 9) {
+      break;
+    }
     container.innerHTML += 
                   `
                   <a href="details.html?id=${data[i].id}" class="slide">
@@ -52,3 +55,14 @@ function createHtml(data) {
                   `
   }
 }
+
+/* —————————  Carousel Arrows  ————————————————————————————————————————————— */
+const arrowLeft = document.querySelector(".fa-chevron-left");
+const arrowRight = document.querySelector(".fa-chevron-right");
+
+arrowLeft.addEventListener("click", function () {
+  container.scrollLeft -= 1100;
+})
+arrowRight.addEventListener("click", function () {
+  container.scrollLeft += 1100;
+})
