@@ -104,9 +104,11 @@ nav a {
 
 .logo {
   margin: auto 0;
-  padding-left: 2rem;
+  padding-left: 100px;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
+  max-width: 500px;
+  justify-content: center;
   
 }
 
@@ -201,6 +203,7 @@ footer span {
 .hero {
   background-color: var(--bg-paper);
   height: 900px;
+  padding-top: 2rem;
 }
 
 .hero-container {
@@ -221,7 +224,9 @@ footer span {
 .hero-left {
   display: flex;
   justify-content: space-around;
-  padding-left: 15rem;
+  max-width: 960px;
+  margin: 0 auto;
+  
   padding-bottom: 10rem;
   
   /* border: solid 1px red; */
@@ -272,16 +277,18 @@ footer span {
   z-index: 1;
 }
 .hero-img-behind img {
-  width: 300px;
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
 }
 
 .hero-img-front {
-  padding: 50px 80px 85px;
+  padding: 30px 120px 85px;
   z-index: 10;
 }
 
 .hero-img-front img {
-  width: 425px;
+  width: 500px;
   object-fit: contain;
 }
 
