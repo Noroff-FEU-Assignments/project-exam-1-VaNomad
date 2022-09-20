@@ -24,7 +24,7 @@
   --bg-grey-lighter: #d5d5d5;
   --bckgr-grey-dark: #959595;
   --bg-grey-darkest: #6e6d6d;
-  --bg-paper: rgba(196, 195, 169, 0.3);
+  --bg-paper: rgb(242, 241, 232);
 }
 
 * {
@@ -86,11 +86,13 @@ body {
 nav {
   width: 100%;
   min-height: 75px;
-  border-bottom: solid 1px var(--bg-grey-light);
   height: 100px;
+  background-color: var(--bg-paper);
+  position: fixed;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  z-index: 1000;
 }
 
 nav a {
@@ -208,8 +210,12 @@ footer span {
   justify-content: space-around;
   margin: auto;
   align-items: center;
-  border: solid 1px red;
+}
 
+.hero-test {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
 }
 
 .hero-left {
@@ -218,7 +224,15 @@ footer span {
   border: solid 1px red;
   width: 500px;
   height: 400px;
+}
 
+.hero-right {
+  display: flex;
+  justify-content: end;
+  background-color: darkturquoise;
+  z-index: 100;
+  box-shadow: 61px 33px aqua;
+  padding: 50px;
 }
 
 .hero-text {
