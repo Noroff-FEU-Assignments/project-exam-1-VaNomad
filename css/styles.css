@@ -455,6 +455,8 @@ label {
 .form-error {
   color: var(--red);
   font-size: .8rem;
+  margin-top: 3px;
+  display: none;
 }
 
 .inputs {
@@ -463,6 +465,7 @@ label {
 
 .form-btn {
   margin: 3rem 0 0;
+  cursor: pointer;
 }
 
 
