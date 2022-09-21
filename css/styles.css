@@ -400,12 +400,12 @@ scroll-behavior: smooth;
 
 /* —————————  Blog page  ————————————————————————————————————————————— */
 .blog-grid {
-  width: 90vw;
   margin: auto;
-  padding-top: 75px;
+  padding: 150px 0 75px 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(2, 350px);
+  justify-content: center;
+  row-gap: 40px;
   border: solid 2px red;
 }
 
