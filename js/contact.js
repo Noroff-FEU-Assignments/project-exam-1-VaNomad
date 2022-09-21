@@ -7,17 +7,19 @@ const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
+const formBtn = document.querySelector(".form-btn");
+
 
 function validateForm() {
   event.preventDefault();
 
-  if (checkLength(name.value, 2)) {
+  if (checkLength(name.value, 5)) {
     nameError.style.display = "none";
   } else {
     nameError.style.display = "block";
   }
 
-  if (checkLength(subject.value, 0)) {
+  if (checkLength(subject.value, 15)) {
     subjectError.style.display = "none";
   } else {
     subjectError.style.display = "block";
@@ -29,7 +31,7 @@ function validateForm() {
     emailError.style.display = "block";
   }
 
-  if (checkLength(message.value, 9)) {
+  if (checkLength(message.value, 25)) {
     messageError.style.display = "none";
   } else {
     messageError.style.display = "block";
@@ -37,6 +39,7 @@ function validateForm() {
 }
 
 form.addEventListener("submit", validateForm);
+form.addEventListener("submit", formSent);
 
 function checkLength(value, len) {
   if (value.trim().length > len) {
@@ -55,19 +58,15 @@ function validateEmail(email) {
 
 console.log(validateEmail);
 
+const nameErr = (nameError.display === "");
+const subErr = (subjectError.display === "");
+const emailErr = (emailError.display === "");
+const messErr = (messageError.display === "");
 
-// form.onsubmit = function () {
-//   event.preventDefault();
-  
-//   console.log(event);
-
-//   const name = document.querySelector("#name");
-
-//   console.log(name.value);
-  
-  
-  
-// }
-
-
-// const regEx = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/;
+function formSent() {
+  if (nameErr || subErr || emailErr || messErr) {
+    formBtn.innerHTML = "Message Sent";
+  } else {
+    formBtn.innerHTML = "Send";
+  }
+}
