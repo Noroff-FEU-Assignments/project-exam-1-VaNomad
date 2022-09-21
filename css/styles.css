@@ -406,7 +406,16 @@ scroll-behavior: smooth;
   grid-template-columns: repeat(2, 350px);
   justify-content: center;
   row-gap: 40px;
-  border: solid 2px red;
+  /* border: solid 2px red; */
+}
+
+.date {
+  font-family: 'Alumni Sans', sans-serif;
+  margin: 0 auto;
+}
+
+.btn-blog {
+  margin: auto;
 }
 
 /* —————————  Details page  ————————————————————————————————————————————— */
