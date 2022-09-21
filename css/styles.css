@@ -415,7 +415,13 @@ scroll-behavior: smooth;
 }
 
 .btn-blog {
-  margin: auto;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 /* —————————  Details page  ————————————————————————————————————————————— */

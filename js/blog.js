@@ -2,7 +2,7 @@ const url = "https://analogflowers.sjur.io/wp-json/wp/v2/posts?per_page=100&_emb
 
 const container = document.querySelector(".blog-grid");
 
-async function createCarousel() {
+async function createBlog() {
   try {
     const response = await fetch(url);
     const data = await response.json();
@@ -19,7 +19,7 @@ async function createCarousel() {
   }
 }
 
-createCarousel();
+createBlog();
 
 
 function createHtml(data) {
