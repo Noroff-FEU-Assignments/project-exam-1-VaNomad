@@ -402,6 +402,7 @@ scroll-behavior: smooth;
 .blog-grid {
   width: 90vw;
   margin: auto;
+  padding-top: 75px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
