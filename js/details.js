@@ -13,7 +13,7 @@ console.log(id);
 const url = "https://analogflowers.sjur.io/wp-json/wp/v2/posts/" + id;
 
 // Details API call
-async function createCarousel() {
+async function createDetails() {
   try {
     const response = await fetch(url);
     const data = await response.json();
@@ -30,20 +30,45 @@ async function createCarousel() {
   }
 }
 
-createCarousel();
+createDetails();
 
 // Details Html function
 function createHtml(data) {
   postDetails.innerHTML = 
                   `
-                  <div class="details">
                     <h1>${data.date}</h1>
-                    <div class="details-image" style="background-image" url("${data.content.rendered}")></div>
-                  </div>
-                    
-                  
+                    <div class="details">${data.content.rendered}</div>
                   `
 }
 
-const image = document.querySelector(".blog-image");
+
+
+
+
+/* —————————  Modal  ———————————————————————————————————————————————————— */
+
+// Modal Targets
+
+const image = document.querySelector(".bttn");
+const modal = document.querySelector(".modal");
+const span = document.querySelector(".close");
+
+
+// Modal Open
+image.onclick = function () {
+  modal.style.display = "block";
+}
+
+// Modal Close w/span
+span.onclick = function () {
+  modal.style.display = "none";
+}
+
+// Modal Close w/outside click
+window.onclick = function () {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 
