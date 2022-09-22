@@ -1,17 +1,18 @@
+
+
+/* —————————  Details Page  ————————————————————————————————————————————— */
+
+// Details Targets
 const postDetails = document.querySelector(".post-details");
-
 const queryString = document.location.search;
-
 const params = new URLSearchParams(queryString);
-
 const id = params.get("id");
-
 console.log(id);
 
+// Details Endpoint
 const url = "https://analogflowers.sjur.io/wp-json/wp/v2/posts/" + id;
 
-// ?per_page=100&_embed
-
+// Details API call
 async function createCarousel() {
   try {
     const response = await fetch(url);
@@ -31,7 +32,7 @@ async function createCarousel() {
 
 createCarousel();
 
-
+// Details Html function
 function createHtml(data) {
   postDetails.innerHTML = 
                   `

@@ -1,3 +1,6 @@
+/* —————————  Contact Page  ————————————————————————————————————————————— */
+
+// Contact Targets
 const form = document.querySelector("#contact-form");
 const name = document.querySelector("#name");
 const nameError = document.querySelector("#nameError");
@@ -10,8 +13,7 @@ const messageError = document.querySelector("#messageError");
 const formBtn = document.querySelector(".form-btn");
 const thankYou = document.querySelector(".thank-you");
 
-
-
+// Contact validate form function
 function validateForm() {
   event.preventDefault();
 
@@ -43,6 +45,7 @@ function validateForm() {
 form.addEventListener("submit", validateForm);
 form.addEventListener("submit", formSent);
 
+// Contact validate length function
 function checkLength(value, len) {
   if (value.trim().length > len) {
     return true;
@@ -52,6 +55,7 @@ function checkLength(value, len) {
   }
 }
 
+// Contact validate email function
 function validateEmail(email) {
   const regEx = /\S+@\S+\.\S+/;
   const matches = regEx.test(email);
@@ -60,11 +64,13 @@ function validateEmail(email) {
 
 console.log(validateEmail);
 
+// Contact sent form variables
 const nameErr = (nameError.display === "");
 const subErr = (subjectError.display === "");
 const emailErr = (emailError.display === "");
 const messErr = (messageError.display === "");
 
+// Contact sent form function
 function formSent() {
   if (!nameErr || !subErr || !emailErr || !messErr) {
     formBtn.innerHTML = "Message Sent";

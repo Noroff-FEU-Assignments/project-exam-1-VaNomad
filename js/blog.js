@@ -1,15 +1,16 @@
+/* —————————  Blog Page  ————————————————————————————————————————————— */
 
-// Endpoint
-const url = "https://analogflowers.sjur.io/wp-json/wp/v2/posts?per_page=100&_embed"
+// Blog Endpoint
+const burl = "https://analogflowers.sjur.io/wp-json/wp/v2/posts?per_page=100&_embed"
 
-// Html targets
+// Blog targets
 const container = document.querySelector(".blog-grid");
 const loadBtn = document.querySelector(".btn-blog");
 
-// API call
+// Blog API call
 async function createBlog() {
   try {
-    const response = await fetch(url);
+    const response = await fetch(burl);
     const data = await response.json();
     console.log(data);
     
@@ -26,8 +27,7 @@ async function createBlog() {
 
 createBlog();
 
-
-// Default Html function
+// Blog Html function
 function createHtml(data) {
   for (let i = 0; i < data.length; i++) {
     if (i === 10) {
@@ -45,10 +45,10 @@ function createHtml(data) {
   }
 }
 
-// "Load more" API call
+// Blog "Load more" API call
 async function loadMoreBlogs() {
   try {
-    const response = await fetch(url);
+    const response = await fetch(burl);
     const data = await response.json();
     console.log(data);
     
@@ -65,12 +65,13 @@ async function loadMoreBlogs() {
 
 loadMoreBlogs();
 
-// "Load more" button event listener
+// Blog "Load more" button event listener
 loadBtn.addEventListener("click", loadMoreBlogs);
 
-
-// "Load more" Html function
+// Blog "Load more" Html function
 function loadMoreHTML(data) {
+  console.log("hello");
+  
   for (let i = 0; i < data.length; i++) {
     container.innerHTML += 
                   `
