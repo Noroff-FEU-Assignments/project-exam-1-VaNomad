@@ -51,7 +51,7 @@ body {
 
 .flex-row {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .flex-column {
@@ -464,9 +464,21 @@ label {
 }
 
 .form-btn {
-  margin: 3rem 0 0;
+  margin: 2rem 2rem 0;
   cursor: pointer;
 }
+
+.reset-style {
+  color: var(--red);
+  background: none;
+  border: none;
+  height: 3rem;
+  width: 9.5rem;
+  cursor: pointer;
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  font-size: 1.8rem;
+}
+
 
 
 /* —————————  Media Queries  ————————————————————————————————————————————— */
