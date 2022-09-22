@@ -414,11 +414,17 @@ scroll-behavior: smooth;
 .btn-blog {
   width: 100%;
   max-width: 250px;
-  margin: 0 auto;
+  margin: 0 auto 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.btn-blog:hover {
+  border: none;
+  background-color: var(--red);
+  color: var(--bckgr-white);
 }
 
 /* —————————  Details page  ————————————————————————————————————————————— */
