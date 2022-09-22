@@ -4,7 +4,7 @@ const url = "https://analogflowers.sjur.io/wp-json/wp/v2/posts?per_page=100&_emb
 
 // Html targets
 const container = document.querySelector(".blog-grid");
-const loadButton = document.querySelector(".btn-blog");
+const loadBtn = document.querySelector(".btn-blog");
 
 // API call
 async function createBlog() {
@@ -45,6 +45,30 @@ function createHtml(data) {
   }
 }
 
+// "Load more" API call
+async function loadMoreBlogs() {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+    
+    container.innerHTML = "";
+   
+    loadMoreHTML(data);
+
+  } catch (error) {
+    console.log(error);
+    container.innerHTML = ("The resource can not be found", error)
+    
+  }
+}
+
+loadMoreBlogs();
+
+// "Load more" button event listener
+loadBtn.addEventListener("click", loadMoreBlogs);
+
+
 // "Load more" Html function
 function loadMoreHTML(data) {
   for (let i = 0; i < data.length; i++) {
@@ -60,4 +84,3 @@ function loadMoreHTML(data) {
   }
 }
 
-loadButton.addEventListener("click", loadMoreHTML);
