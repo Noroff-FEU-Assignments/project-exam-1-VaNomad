@@ -390,14 +390,14 @@ scroll-behavior: smooth;
 .btn {
   height: 50px;
   width: 150px;
-  border: solid 1px var(--red);
+  border: solid 2px var(--red);
   background: none;
   color: var(--red);
   margin: 3rem;
   font-family: 'Alumni Sans Pinstripe', sans-serif;
+  font-weight: bold;
   font-size: 1.7rem;
   align-items: flex-end;
-  border: solid 1px var(--red);
 }
 
 /* —————————  Blog page  ————————————————————————————————————————————— */
