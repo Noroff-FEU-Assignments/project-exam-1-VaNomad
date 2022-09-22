@@ -45,5 +45,5 @@ function createHtml(data) {
                   `
 }
 
-const image = document.querySelector(".wp-block-image");
+const image = document.querySelector(".blog-image");
 
