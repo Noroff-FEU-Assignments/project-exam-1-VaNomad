@@ -427,6 +427,13 @@ scroll-behavior: smooth;
   margin: auto;
 }
 
+.fa-arrow-left {
+  position: absolute;
+  font-size: 3rem;
+  color: var(--black);
+  padding-top: 3rem;
+  padding-left: 4rem;
+}
 /* —————————  Contact page  ————————————————————————————————————————————— */
 
 .form {
