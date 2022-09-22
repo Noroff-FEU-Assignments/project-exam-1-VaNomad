@@ -44,3 +44,6 @@ function createHtml(data) {
                   
                   `
 }
+
+const image = document.querySelector(".wp-block-image");
+
