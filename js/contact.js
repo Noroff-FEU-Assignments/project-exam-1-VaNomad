@@ -8,6 +8,8 @@ const subjectError = document.querySelector("#subjectError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 const formBtn = document.querySelector(".form-btn");
+const thankYou = document.querySelector(".thank-you");
+
 
 
 function validateForm() {
@@ -64,8 +66,9 @@ const emailErr = (emailError.display === "");
 const messErr = (messageError.display === "");
 
 function formSent() {
-  if (nameErr || subErr || emailErr || messErr) {
+  if (!nameErr || !subErr || !emailErr || !messErr) {
     formBtn.innerHTML = "Message Sent";
+    thankYou.classList.remove("hidden");
   } else {
     formBtn.innerHTML = "Send";
   }

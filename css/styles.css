@@ -466,6 +466,16 @@ label {
   display: none;
 }
 
+.hidden {
+  display: none;
+}
+
+.thank-you {
+  padding: 3rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
 .inputs {
   padding: 1rem;
 }
