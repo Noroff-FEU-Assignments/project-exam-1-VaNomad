@@ -29,20 +29,18 @@ async function createDetails() {
     
   }
   // Modal targets
+  const apiImgs = document.querySelector("figure img");
   const modal = document.querySelector(".modal"); //wrapper
   const modalImg = document.querySelector(".modal-image");
-  const apiImg = document.querySelector("figure img");
-
-  const allImages = [];
+  // const apiImg = document.querySelector("figure img");
   
-  for (let i = 0; i < apiImg.length; i++) {
-    allImages(apiImg[i]);
-  }
-  console.log(apiImg);
+  // for (let i = 0; i < apiImgs.length; i++) {
+  //   console.log(i);
+  // }
   
 
   // Modal Open
-  apiImg.onclick = function () {
+  apiImgs.onclick = function () {
   modal.style.display = "block";
   modalImg.src = event.target.src;
   }

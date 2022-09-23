@@ -17,4 +17,4 @@ const mobileMenu = () => {
   
 }
 
-mobile.addEventListener("click", mobileMenu)
+mobile.addEventListener("click", mobileMenu);

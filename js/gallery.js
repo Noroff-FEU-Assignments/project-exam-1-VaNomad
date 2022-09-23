@@ -2,11 +2,18 @@
 /* —————————  Gallery Page  ————————————————————————————————————————————— */
 
 // Gallery Endpoint
-const gurl = "https://analogflowers.sjur.io/wp-json/wp/v2/media/205"
+
 
 // Gallery Targets
 const galleryContainer = document.querySelector(".container");
 const gallery = document.querySelector(".gallery");
+
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const id = params.get("id");
+console.log(id);
+
+const gurl = "https://analogflowers.sjur.io/wp-json/wp/v2/media?per_page=100&_embed" + id;
 
 // Gallery API call
 async function createGallery() {
@@ -14,16 +21,18 @@ async function createGallery() {
     const response = await fetch(gurl);
     const data = await response.json();
     console.log(data);
+
+    gallery.innerHTML = "";
    
-    for (let i = 0; i <= data.length; i++) {
-      galleryContainer.innerHTML += `
-      <img src="${data[i]}"/>
-      <h1>"${data[i].title}"</h1>
+    for (let i = 0; i < data.length; i++) {
+      gallery.innerHTML += `
+                            <img src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
+                            <h1>"${data[0].title.rendered}"</h1>
       `
     }
   } catch (error) {
     console.log(error);
-    galleryContainer.innerHTML = ("The image can not be found", error)
+    gallery.innerHTML = ("The image can not be found", error)
     
   }
 }
