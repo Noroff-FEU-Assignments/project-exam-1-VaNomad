@@ -428,17 +428,44 @@ scroll-behavior: smooth;
 }
 
 /* —————————  Details page  ————————————————————————————————————————————— */
-.details {
-  max-width: 940px;
+.details-container {
+  
   margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.post-details {
+  width: 70%;
+}
+
+.post-details h1,
+.details p {
+  padding: 1rem 0;
+}
+
+.post-details img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.post-details iframe {
+  width: 100%;
+}
+
+
+
+figcaption {
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
 .fa-arrow-left {
-  position: absolute;
   font-size: 3rem;
   color: var(--black);
   padding-top: 3rem;
-  padding-left: 4rem;
+  padding-right: 2rem;
 }
 
 /* Modal (background) */
