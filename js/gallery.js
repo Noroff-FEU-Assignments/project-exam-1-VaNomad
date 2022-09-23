@@ -26,8 +26,10 @@ async function createGallery() {
    
     for (let i = 0; i < data.length; i++) {
       gallery.innerHTML += `
-                            <img src="${data[i].source_url}">
-                            <h1>"${data[i].caption.rendered}"</h1>
+                            <div class="card-container">
+                              <img src="${data[i].source_url}">
+                              <h1>"${data[i].caption.rendered}"</h1>
+                            </div>
       `
     }
   } catch (error) {
