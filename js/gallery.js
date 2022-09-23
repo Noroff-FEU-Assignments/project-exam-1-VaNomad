@@ -26,8 +26,8 @@ async function createGallery() {
    
     for (let i = 0; i < data.length; i++) {
       gallery.innerHTML += `
-                            <img src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
-                            <h1>"${data[0].title.rendered}"</h1>
+                            <img src="${data[i].source_url}">
+                            <h1>"${data[i].caption.rendered}"</h1>
       `
     }
   } catch (error) {
