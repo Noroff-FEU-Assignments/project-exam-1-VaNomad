@@ -617,6 +617,12 @@ label {
     padding: 1rem;
     font-size: 1.4rem;
   }
+
+  .nav-link:hover {
+    background-color: var(--bckgr-white);
+    color: var(--black);
+  }
+  
   .nav-menu.active {
     left: 0;
     top: 0;
