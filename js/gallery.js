@@ -5,15 +5,21 @@
 
 
 // Gallery Targets
-const galleryContainer = document.querySelector(".container");
+const galleryContainer = document.querySelector(".gallery-container");
 const gallery = document.querySelector(".gallery");
+const loader = document.querySelector(".loader");
 
-const queryString = document.location.search;
-const params = new URLSearchParams(queryString);
-const id = params.get("id");
-console.log(id);
+console.log(galleryContainer);
+console.log(gallery);
 
-const gurl = "https://analogflowers.sjur.io/wp-json/wp/v2/posts?per_page=100&_embed" + id;
+
+// const queryString = document.location.search;
+// const params = new URLSearchParams(queryString);
+// const id = params.get("id");
+// console.log(id);
+
+const gurl = "https://analogflowers.sjur.io/wp-json/wp/v2/pages/235?_embed";
+console.log(gurl);
 
 // Gallery API call
 async function createGallery() {
@@ -22,19 +28,32 @@ async function createGallery() {
     const data = await response.json();
     console.log(data);
 
-    gallery.innerHTML = "";
+    galleryContainer.innerHTML = "";
+
+    galleryContainer.innerHTML += `
+                            <div class="gallery">
+                              <img src="${data.content.rendered}"/>
+                             </div>
+    `
    
-    for (let i = 0; i < data.length; i++) {
-      gallery.innerHTML += `
-                            <div class="card-container">
-                              <img src="${data[i].content.rendered}">
-                              <h1>"${data[i].title.rendered}"</h1>
-                            </div>
-      `
-    }
+    // for (let i = 0; i < data.length; i++) {
+    //   gallery.innerHTML += `
+    //                         <img src="${data[i]}"/>
+    //                         <h1>"${data[i].title}"</h1>
+    //   `
+    // }
+
+    // data.forEach(function () {
+    //   gallery.innerHTML += `
+    //                         <div>
+    //                           <img src="${data.content.rendered}"/>
+    //                         </div>
+    //                       `
+    // });  
+
   } catch (error) {
     console.log(error);
-    gallery.innerHTML = ("The image can not be found", error)
+    galleryContainer.innerHTML = ("The image can not be found", error)
     
   }
 }
