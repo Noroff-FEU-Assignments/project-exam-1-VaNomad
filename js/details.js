@@ -29,7 +29,7 @@ async function createDetails() {
     
   }
   // Modal targets
-  const apiImgs = document.querySelector("figure img");
+  const apiImgs = document.querySelector(".post-details");
   const modal = document.querySelector(".modal"); //wrapper
   const modalImg = document.querySelector(".modal-image");
   // const apiImg = document.querySelector("figure img");

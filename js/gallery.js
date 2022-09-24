@@ -30,6 +30,42 @@ async function createGallery() {
     gallery.innerHTML = ("The image can not be found", error)
     
   }
+  // Modal targets
+  const apiImgs = document.querySelector(".gallery");
+  const modal = document.querySelector(".modal"); //wrapper
+  const modalImg = document.querySelector(".modal-image");
+  // const apiImg = document.querySelector("figure img");
+  
+  // for (let i = 0; i < apiImgs.length; i++) {
+  //   console.log(i);
+  // }
+  
+
+  // Modal Open
+  apiImgs.onclick = function (event) {
+  modal.style.display = "block";
+  modalImg.src = event.target.src;
+  }
+  // Modal Close w/span
+  span.onclick = function () {
+  modal.style.display = "none";
+  }
+  // Modal Close w/outside click
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+
+
+
+
+
+
+
+
+
 }
 
 createGallery();
