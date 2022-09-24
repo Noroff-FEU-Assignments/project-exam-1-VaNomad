@@ -12,7 +12,6 @@
 */
 
 /* —————————  Global Styles  ————————————————————————————————————————————— */
-
 :root {
   --black: #4A4A4A;
   --red: #DF856E;
@@ -25,6 +24,7 @@
   --bckgr-grey-dark: #959595;
   --bg-grey-darkest: #6e6d6d;
   --bg-paper: rgb(242, 241, 232);
+  --transparent: rgba(0, 0, 0, 0.3)
 }
 
 * {
@@ -48,7 +48,6 @@ body {
 
 
 /* —————————  Utility classes  ————————————————————————————————————————————— */
-
 .flex-row {
   display: flex;
   justify-content: center;
@@ -60,11 +59,9 @@ body {
 }
 
 
-
 /* —————————  Loader  ————————————————————————————————————————————— */
 .loader-container {
-  padding: 30%;
-  background-color: var(--black);
+  padding: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,7 +112,6 @@ nav a {
   flex-direction: column;
   max-width: 500px;
   justify-content: center;
-  
 }
 
 .logo h1 {
@@ -196,7 +192,6 @@ footer span {
   color: var(--bg-grey-lighter);
 }
 
-
 .copyright {
   text-align: center;
   font-size: .7rem;
@@ -205,9 +200,9 @@ footer span {
   padding: 1.5rem 0 .2rem 0;
 }
 
-/* —————————  INDEX.HTML  ————————————————————————————————————————————— */
-/* ————————— <section class="hero"> */
 
+/* —————————  INDEX.HTML  ————————————————————————————————————————————— */
+/* -------------------------------- <section class="hero"> */
 .hero {
   background-color: var(--bg-paper);
   height: 900px;
@@ -283,6 +278,7 @@ footer span {
   position: absolute;
   z-index: 1;
 }
+
 .hero-img-behind img {
   width: 350px;
   height: 500px;
@@ -299,9 +295,7 @@ footer span {
   object-fit: contain;
 }
 
-
-/* ————————— <section class="posts"> */
-
+/* ----------------------------- <section class="posts"> */
 .posts {
   background-color: var(--black);
   padding: 6rem 0rem;
@@ -316,14 +310,14 @@ footer span {
 }
 
 .slider-container {
-height: 100%;
-width: 100%;
-min-width: 30%;
-margin: auto;
-padding: .5rem;
-display: flex;
-overflow: scroll;
-scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  min-width: 30%;
+  margin: auto;
+  padding: .5rem;
+  display: flex;
+  overflow: scroll;
+  scroll-behavior: smooth;
 }
 
 .slide {
@@ -333,7 +327,6 @@ scroll-behavior: smooth;
   /* border: 1px solid red; */
   background-color: var(--bckgr-white);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  /* border: solid 1px greenyellow; */
 }
 
 .slide:hover {
@@ -362,9 +355,7 @@ scroll-behavior: smooth;
   cursor: pointer;
 }
 
-
-/* ————————— <section class="about"> */
-
+/* --------------------------------- <section class="about"> */
 .about {
   background-color: var(--bg-paper);
 }
@@ -418,13 +409,11 @@ scroll-behavior: smooth;
 
 
 /* —————————  About page  ————————————————————————————————————————————— */
-
 .about-content{
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-
 
 
 /* —————————  Blog page  ————————————————————————————————————————————— */
@@ -435,7 +424,6 @@ scroll-behavior: smooth;
   grid-template-columns: repeat(2, 350px);
   justify-content: center;
   row-gap: 40px;
-  /* border: solid 2px red; */
 }
 
 .btn-blog {
@@ -453,6 +441,7 @@ scroll-behavior: smooth;
   background-color: var(--red);
   color: var(--bckgr-white);
 }
+
 
 /* —————————  Details page  ————————————————————————————————————————————— */
 .details-container {
@@ -506,7 +495,7 @@ figcaption {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Modal (Content/Box) */
+/* Modal (Content) */
 .modal-content {
   background-color: var(--bckgr-white);
   margin: 15% auto;
@@ -544,11 +533,9 @@ figcaption {
 
 
 /* —————————  Gallery page  ————————————————————————————————————————————— */
-
 .gallery-container {
   padding-top: 8rem;
   padding-bottom: 2rem;
-  
 }
 
 figure {
@@ -573,8 +560,8 @@ figcaption {
   padding: 10px;
 }
 
-/* —————————  Contact page  ————————————————————————————————————————————— */
 
+/* —————————  Contact page  ————————————————————————————————————————————— */
 .form {
   background-color: var(--bckgr-grey-dark);
   color: var(--bckgr-white);
@@ -636,7 +623,6 @@ label {
 }
 
 
-
 /* —————————  Media Queries  ————————————————————————————————————————————— */
 @media screen and (max-width: 940px) {
   .nav-menu {
@@ -650,10 +636,12 @@ label {
     transition-duration: .5s;
     align-items: center;
   }
+
   .nav-menu span {
     font-weight: 900;
     font-size: 1.7rem;
   }
+
   .mobile {
     display: block;
     transition: transform 0.5s;
@@ -678,6 +666,7 @@ label {
     left: 0;
     top: 0;
   }
+
   .mobile.active {
     position: absolute;
     top: 38px;
@@ -685,6 +674,10 @@ label {
     transition: transform 0.5s;
     transform: rotate(270deg);
     color: var(--bg-grey-light);
+  }
+
+  .loader-container {
+    padding: 25%;
   }
   
 }
