@@ -32,6 +32,8 @@ async function createDetails() {
   const apiImgs = document.querySelector(".post-details");
   const modal = document.querySelector(".modal"); //wrapper
   const modalImg = document.querySelector(".modal-image");
+  const span = document.querySelector(".close");
+  
   // const apiImg = document.querySelector("figure img");
   
   // for (let i = 0; i < apiImgs.length; i++) {
@@ -40,7 +42,7 @@ async function createDetails() {
   
 
   // Modal Open
-  apiImgs.onclick = function () {
+  apiImgs.onclick = function (event) {
   modal.style.display = "block";
   modalImg.src = event.target.src;
   }

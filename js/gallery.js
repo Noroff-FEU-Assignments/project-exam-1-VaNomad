@@ -34,6 +34,7 @@ async function createGallery() {
   const apiImgs = document.querySelector(".gallery");
   const modal = document.querySelector(".modal"); //wrapper
   const modalImg = document.querySelector(".modal-image");
+  const span = document.querySelector(".close");
   // const apiImg = document.querySelector("figure img");
   
   // for (let i = 0; i < apiImgs.length; i++) {
