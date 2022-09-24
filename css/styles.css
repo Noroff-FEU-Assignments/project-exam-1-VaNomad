@@ -477,7 +477,7 @@ figcaption {
   height: 100%;
   overflow: auto;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Modal (Content/Box) */
@@ -486,20 +486,29 @@ figcaption {
   margin: 15% auto;
   padding: 1.5rem;
   border: solid 1px var(--bckgr-grey-dark);
-  width: 80%;
+  width: 90%;
+  height: 90%;
+}
+
+.modal-content img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  
 }
 
 /* Modal (close button) */
 .close {
-  color: var(--bg-grey-light);
+  color: var(--black);
   float: right;
   font-size: 2rem;
   font-weight: bold;
+  position: absolute;
 }
 
 .close:hover,
 .close:focus {
-  color: var(--black);
+  color: var(--red);
   cursor: pointer;
 }
 
