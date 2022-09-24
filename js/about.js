@@ -7,19 +7,19 @@ const aboutContainer = document.querySelector(".about-container");
 const loader = document.querySelector(".loader");
 
 // Gallery Endpoint
-const gurl = "https://analogflowers.sjur.io/wp-json/wp/v2/pages/134?_embed";
+const aurl = "https://analogflowers.sjur.io/wp-json/wp/v2/pages/134?_embed";
 console.log(aurl);
 
 // Gallery API call
 async function fetchAbout() {
   try {
-    const response = await fetch(gurl);
+    const response = await fetch(aurl);
     const data = await response.json();
     console.log(data);
 
     aboutContainer.innerHTML = "";
 
-    aboutContainer.innerHTML += `
+    aboutContainer.innerHTML = `
                             <div class="about">
                               ${data.content.rendered}
                              </div>
@@ -31,3 +31,5 @@ async function fetchAbout() {
     
   }
 }
+
+fetchAbout();
