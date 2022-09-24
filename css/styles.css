@@ -409,6 +409,12 @@ scroll-behavior: smooth;
 
 /* —————————  About page  ————————————————————————————————————————————— */
 
+.about-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 
 /* —————————  Blog page  ————————————————————————————————————————————— */
@@ -533,11 +539,6 @@ figcaption {
   padding-top: 8rem;
   padding-bottom: 2rem;
   
-}
-
-.gallery {
-  display: flex;
-  justify-content: center;
 }
 
 figure {
