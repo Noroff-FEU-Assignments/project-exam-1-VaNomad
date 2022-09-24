@@ -429,7 +429,6 @@ scroll-behavior: smooth;
 
 /* —————————  Details page  ————————————————————————————————————————————— */
 .details-container {
-  
   margin: auto;
   display: flex;
   justify-content: center;
@@ -450,8 +449,8 @@ scroll-behavior: smooth;
   object-fit: cover;
 }
 
-.post-details iframe {
-  width: 100%;
+.post-details figure {
+  display: block; 
 }
 
 figcaption {
