@@ -103,15 +103,14 @@ nav {
 }
 
 nav a {
-  /* background-color: purple; */
   font-size: 1.2rem;
-  padding: .5rem 1rem;
+  padding: 1rem .5rem;
   margin-left: 2.5rem;
 }
 
 .logo {
   margin: auto 0;
-  padding-left: 100px;
+  padding-left: 80px;
   display: flex;
   flex-direction: column;
   max-width: 500px;
@@ -142,7 +141,13 @@ nav a {
 
 .nav-link[aria-current="page"]{
   background-color: var(--black);
+  border: solid 1px var(--bckgr-grey-dark);
   color: var(--paper);
+}
+
+.nav-link:hover {
+  border: solid 1px var(--bckgr-grey-dark);
+  
 }
 
 .mobile {
@@ -226,14 +231,12 @@ footer span {
   height: 550px;
   margin: 0 auto;
   align-items: center;
-  /* border: solid 4px red; */
 }
 
 .hero-right {
   display: flex;
   justify-content: end;
   z-index: 100;
-  /* border: solid 4px turquoise; */
 }
 
 .hero-text {
@@ -242,10 +245,9 @@ footer span {
   color: var(--bg-grey-light);
   display: flex;
   flex-direction: column;
-  /* border: solid 4px gold; */
+  justify-content: space-around;
   width: 400px;
   height: 300px;
-  
 }
 
 .symbol-container {
@@ -254,7 +256,6 @@ footer span {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* border: solid 4px rgb(47, 85, 255); */
 }
 
 .symbol-container h2 {
@@ -264,7 +265,6 @@ footer span {
   height: 30px;
   display: flex;
   justify-content: flex-end;
-  /* border: solid 4px red; */
 }
 
 .text-right-align {
@@ -290,7 +290,7 @@ footer span {
 }
 
 .hero-img-front {
-  padding: 30px 120px 85px;
+  padding: 30px 85px 30px 0;
   z-index: 10;
 }
 
@@ -298,8 +298,6 @@ footer span {
   width: 500px;
   object-fit: contain;
 }
-
-
 
 
 /* ————————— <section class="posts"> */
@@ -326,7 +324,6 @@ padding: .5rem;
 display: flex;
 overflow: scroll;
 scroll-behavior: smooth;
-/* border: 1px solid greenyellow; */
 }
 
 .slide {
@@ -365,7 +362,9 @@ scroll-behavior: smooth;
   cursor: pointer;
 }
 
+
 /* ————————— <section class="about"> */
+
 .about {
   background-color: var(--bg-paper);
 }
@@ -380,13 +379,10 @@ scroll-behavior: smooth;
 .about-wrapper img {
   width: 400px;
   margin-right: 20rem;
-  border: solid 1px red;
-  
 }
 
 .icon-image-text {
   margin-top: 2rem;
-  border: solid 1px purple;
   font-size: 2rem;
   font-weight: 300;
   flex-wrap: wrap;
@@ -400,12 +396,26 @@ scroll-behavior: smooth;
   border: solid 2px var(--red);
   background: none;
   color: var(--red);
-  margin: 3rem;
+  margin: 3rem 0 3rem 15rem;
   font-family: 'Alumni Sans Pinstripe', sans-serif;
   font-weight: bold;
   font-size: 1.7rem;
-  align-items: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
 }
+
+.btn:hover {
+  font-size: 2rem;
+  border: solid 3px var(--red);
+}
+
+.btn:active {
+  background-color: var(--red);
+  color: var(--paper);
+}
+
 
 /* —————————  About page  ————————————————————————————————————————————— */
 
@@ -655,9 +665,13 @@ label {
     font-size: 1.4rem;
   }
 
-  .nav-link:hover {
+  .nav-link:active {
     background-color: var(--bckgr-white);
     color: var(--black);
+  }
+
+  .nav-link:hover {
+    font-weight: bold;
   }
   
   .nav-menu.active {
