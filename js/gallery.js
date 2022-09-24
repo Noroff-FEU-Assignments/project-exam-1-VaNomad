@@ -28,11 +28,11 @@ async function createGallery() {
     const data = await response.json();
     console.log(data);
 
-    galleryContainer.innerHTML = "";
+    gallery.innerHTML = "";
 
-    galleryContainer.innerHTML += `
-                            <div class="gallery">
-                              <img src="${data.content.rendered}"/>
+    gallery.innerHTML += `
+                            <div class="gallery-image">
+                              ${data.content.rendered}
                              </div>
     `
    
@@ -53,7 +53,7 @@ async function createGallery() {
 
   } catch (error) {
     console.log(error);
-    galleryContainer.innerHTML = ("The image can not be found", error)
+    gallery.innerHTML = ("The image can not be found", error)
     
   }
 }
