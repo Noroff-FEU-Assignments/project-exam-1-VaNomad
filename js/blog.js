@@ -35,6 +35,7 @@ function createHtml(data) {
     }
     container.innerHTML += 
                   `
+                  <h1 class="left-title">blog</h1>
                   <a href="details.html?id=${data[i].id}" class="slide">
                     <img src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
                     <div>  
