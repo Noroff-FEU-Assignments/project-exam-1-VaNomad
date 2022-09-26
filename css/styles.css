@@ -655,26 +655,49 @@ figcaption {
 
 /* —————————  Contact page  ————————————————————————————————————————————— */
 .form {
-  background-color: var(--bckgr-grey-dark);
   color: var(--bckgr-white);
 }
 
+.left-title {
+  position: absolute;
+  padding-bottom: 40rem;
+  padding-left: 8rem;
+  transform: rotate(-90deg);
+  font-size: 6rem;
+  font-weight: 500;
+  text-align: left;
+  color: var(--bg-grey-light);
+  
+}
+
 .form-wrapper {
-  padding: 150px 0 75px 0;
   margin: auto;
+  padding-top: 5rem;
   display: flex;
   justify-content: center;
 }
 
 form {
   padding: 4rem;
-  background: var(--black);
   border-radius: .5rem;
   width: 600px;
 }
 
 label {
-  padding: 10px 0;
+  color: var(--black);
+}
+
+input {
+  background: none;
+  border: none;
+  padding-top: 10px;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  background: none;
+  border: none;
 }
 
 .form-error {
@@ -695,7 +718,9 @@ label {
 }
 
 .inputs {
-  padding: 1rem;
+  padding: .8rem;
+  border: solid 1px var(--black);
+  margin: 1rem;
 }
 
 .form-btn {
