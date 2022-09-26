@@ -47,7 +47,7 @@ body {
 }
 
 
-/* —————————  Utility classes  ————————————————————————————————————————————— */
+/* —————————  Utility/ Re usable classes  ————————————————————————— */
 .flex-row {
   display: flex;
   justify-content: center;
@@ -56,6 +56,13 @@ body {
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  padding: 2rem;
 }
 
 
@@ -409,11 +416,93 @@ footer span {
 
 
 /* —————————  About page  ————————————————————————————————————————————— */
-.about-content{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+
+.about-container {
+  margin: 0 auto;
 }
+
+.about-box {
+  margin: 0 15rem;
+  padding-top: 5rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 2rem 5rem;
+}
+
+.about-content figcaption {
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: 6rem;
+  color: var(--bckgr-grey-dark);
+}
+
+.selfie {
+  align-self: flex-end;
+  margin-top: 3rem;
+}
+
+.sand-storm {
+  align-self: flex-start;
+}
+
+.camera {
+  margin-bottom: 4rem;
+}
+
+.about-content p {
+  text-align: left;
+  color: var(--bckgr-grey-dark);
+}
+
+.headline {
+  padding-top: 2rem;
+  align-self: flex-start;
+  margin-left: 9rem;
+  color: var(--black)
+}
+
+.first,
+.one,
+.two,
+.three {
+  display: flex;
+  width: 45%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: .5px;
+}
+
+.first {
+  width: 45%;
+  margin-top: 1rem;
+}
+
+.three {
+  align-self: flex-start;
+}
+
+.two {
+  align-self: flex-end;
+}
+
+
+
 
 
 /* —————————  Blog page  ————————————————————————————————————————————— */
