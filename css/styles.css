@@ -85,6 +85,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -673,6 +674,11 @@ figcaption {
 
 
 /* —————————  Contact page  ————————————————————————————————————————————— */
+.form .absolute-title {
+  font-size: 11rem;
+  top: 20%;
+}
+
 .form {
   color: var(--bckgr-white);
 }
@@ -734,25 +740,17 @@ textarea {
 
 .form-btn {
   margin: 2rem 2rem 0;
-  cursor: pointer;
 }
 
 .reset-style {
   color: var(--red);
   background: none;
   border: none;
-  height: 3rem;
-  width: 9.5rem;
   cursor: pointer;
   font-family: 'Alumni Sans Pinstripe', sans-serif;
   font-size: 1.8rem;
+  
 }
-
-.form .absolute-title {
-  font-size: 11rem;
-  top: 20%;
-}
-
 
 /* —————————  Media Queries  ————————————————————————————————————————————— */
 @media screen and (max-width: 940px) {
