@@ -89,15 +89,13 @@ body {
 }
 
 .btn:hover,
+.btn:active,
+.btn-blog:hover,
+.btn-blog:active,
 .reset-style:hover {
-  font-size: 2rem;
   background-color: var(--red);
+  border: solid 2px transparent;
   color: var(--bckgr-white);
-}
-
-.btn:active {
-  background-color: var(--red);
-  color: var(--paper);
 }
 
 
@@ -138,7 +136,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  z-index: 1000;
+  z-index: 1100;
 }
 
 nav a {
@@ -159,7 +157,7 @@ nav a {
 .logo h1 {
   font-family: 'Economica', sans-serif;
   font-size: 2rem;
-  color: var(--bg-grey-darkest);
+  color: var(--red);
 }
 
 .menu {
@@ -207,6 +205,7 @@ footer {
   background-color: var(--black);
   color: var(--bg-grey-lighter);
   padding-top: 3rem;
+  z-index: 1100;
 }
 
 footer h1 {
@@ -307,6 +306,13 @@ footer span {
   justify-content: flex-end;
 }
 
+.film-strip {
+  position: absolute;
+  left: 9%;
+  top: 55%;
+  z-index: 1150;
+}
+
 .text-right-align {
   align-self: flex-end;
 }
@@ -369,9 +375,9 @@ footer span {
   min-width: 30.5%;
   height: 100%;
   margin: 0 1rem;
-  /* border: 1px solid red; */
   background-color: var(--bckgr-white);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  z-index: 1006;
 }
 
 .slide:hover {
@@ -398,6 +404,7 @@ footer span {
   color: var(--bg-grey-lighter);
   font-size: 30px;
   cursor: pointer;
+  z-index: 1007;
 }
 
 /* --------------------------------- <section class="about"> */
@@ -415,6 +422,7 @@ footer span {
 .about-wrapper img {
   width: 400px;
   margin-right: 20rem;
+  z-index: 1150;
 }
 
 .icon-image-text {
@@ -534,12 +542,6 @@ footer span {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-
-.btn-blog:hover {
-  border: none;
-  background-color: var(--red);
-  color: var(--bckgr-white);
 }
 
 .blog .absolute-title {
