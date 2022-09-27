@@ -69,7 +69,7 @@ body {
   padding-left: 8rem;
   transform: rotate(-90deg);
   color: var(--bg-grey-light);
-  z-index: 1000;
+  z-index: 4000;
 }
 
 .btn {
@@ -356,6 +356,7 @@ footer span {
 .posts {
   background-color: var(--black);
   padding: 6rem 0rem;
+  z-index: 3000;
 }
 
 .slider-wrapper {
@@ -419,6 +420,7 @@ footer span {
 }
 
 .about-wrapper {
+  margin-left: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -427,7 +429,9 @@ footer span {
 
 .about-wrapper img {
   width: 400px;
-  margin-right: 20rem;
+  align-self: flex-start;
+  margin-left: 10%;
+  flex-wrap: wrap;
   z-index: 3000;
 }
 
@@ -440,8 +444,10 @@ footer span {
   width: 500px;
 }
 
-
-
+.about-wrapper .btn {
+  align-self: flex-end;
+  margin-right: 10%;
+}
 
 /* —————————  About page  ————————————————————————————————————————————— */
 
@@ -533,11 +539,7 @@ footer span {
   justify-content: flex-end;
   row-gap: 50px;
   column-gap: 50px;
-}
-
-.blog .left-title {
-  color: black;
-  font-size: 10rem;
+  z-index: 5000;
 }
 
 .btn-blog {
@@ -685,8 +687,11 @@ figcaption {
 
 /* —————————  Contact page  ————————————————————————————————————————————— */
 .form .absolute-title {
+  padding: 0;
+  margin: 0;
   font-size: 11rem;
-  top: 20%;
+  transform-origin: 20% 10rem;
+
 }
 
 .form {
@@ -696,10 +701,10 @@ figcaption {
 .form-wrapper {
   padding-top: 7rem;
   padding-bottom: 2rem;
-  padding-left: 22%;
   padding-right: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-right: 17%;
 }
 
 form {
