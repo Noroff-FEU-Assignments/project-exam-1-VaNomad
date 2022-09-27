@@ -88,9 +88,11 @@ body {
   cursor: pointer;
 }
 
-.btn:hover {
+.btn:hover,
+.reset-style:hover {
   font-size: 2rem;
-  border: solid 3px var(--red);
+  background-color: var(--red);
+  color: var(--bckgr-white);
 }
 
 .btn:active {
@@ -696,6 +698,7 @@ form {
   padding: 4rem;
   border-radius: .5rem;
   width: 600px;
+  z-index: 1001;
 }
 
 label {
@@ -745,11 +748,11 @@ textarea {
 .reset-style {
   color: var(--red);
   background: none;
-  border: none;
   cursor: pointer;
   font-family: 'Alumni Sans Pinstripe', sans-serif;
-  font-size: 1.8rem;
-  
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0;
 }
 
 /* —————————  Media Queries  ————————————————————————————————————————————— */
