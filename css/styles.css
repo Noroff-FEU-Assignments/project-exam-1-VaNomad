@@ -60,14 +60,11 @@ body {
 
 .absolute-title {
   position: absolute;
-  left: 10%;
-  top: 10%;
   font-family: 'Raleway', sans-serif;
   font-size: 16rem;
   font-weight: 500;
-  padding-bottom: 40rem;
-  padding-left: 8rem;
   transform: rotate(-90deg);
+  transform-origin: 44% 29rem;
   color: var(--bg-grey-light);
   z-index: 4000;
 }
@@ -455,13 +452,6 @@ footer span {
   margin: 0 auto;
 }
 
-.about-container .absolute-title {
-  margin: 0;
-  padding: 0;
-  font-size: 15rem;
-  transform-origin: 54% 26rem;
-}
-
 .about-box {
   margin: 0 15rem;
   padding-top: 5rem;
@@ -560,11 +550,8 @@ footer span {
 }
 
 .blog .absolute-title {
-  margin: 0;
-  padding: 0;
   letter-spacing: 17px;
-  font-size: 16rem;
-  transform-origin: 55% 25rem;
+  transform-origin: 74% 23rem;
 }
 
 
@@ -666,10 +653,8 @@ figcaption {
 }
 
 .gallery-section .absolute-title {
-  margin: 0;
-  padding: 0;
   font-size: 14rem;
-  transform-origin: 49% 25.5rem;
+  transform-origin: 65% 23.5rem;
 }
 
 figure {
@@ -697,11 +682,8 @@ figcaption {
 
 /* —————————  Contact page  ————————————————————————————————————————————— */
 .form .absolute-title {
-  margin: 0;
-  padding: 0;
-  font-size: 12rem;
-  transform-origin: 52% 25.5rem;
-
+  font-size: 14rem;
+  transform-origin: 30% 32.5rem;
 }
 
 .form {
