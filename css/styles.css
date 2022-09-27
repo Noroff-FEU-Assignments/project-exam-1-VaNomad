@@ -682,8 +682,8 @@ figcaption {
 
 /* —————————  Contact page  ————————————————————————————————————————————— */
 .form .absolute-title {
-  font-size: 14rem;
-  transform-origin: 30% 32.5rem;
+  font-size: 13rem;
+  transform-origin: 29% 34rem;
 }
 
 .form {
@@ -691,7 +691,7 @@ figcaption {
 }
 
 .form-wrapper {
-  padding-top: 7rem;
+  padding-top: 6rem;
   padding-bottom: 2rem;
   padding-right: 0;
   display: flex;
@@ -743,11 +743,11 @@ textarea {
 .inputs {
   padding: .8rem;
   border: solid 1px var(--black);
-  margin: 1rem;
+  margin-top: 1.2rem;
 }
 
 .form-btn {
-  margin: 2rem 2rem 0;
+  margin: 2rem 4rem 0;
 }
 
 .reset-style {
