@@ -89,7 +89,8 @@ body {
 .btn:active,
 .btn-blog:hover,
 .btn-blog:active,
-.reset-style:hover {
+.reset-style:hover,
+.reset-style:active {
   background-color: var(--red);
   border: solid 2px transparent;
   color: var(--bckgr-white);
@@ -752,6 +753,7 @@ textarea {
 
 .reset-style {
   color: var(--red);
+  border: solid 2px transparent;
   background: none;
   cursor: pointer;
   font-family: 'Alumni Sans Pinstripe', sans-serif;
