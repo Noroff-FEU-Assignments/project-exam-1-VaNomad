@@ -736,9 +736,13 @@ textarea {
 }
 
 .thank-you {
-  padding: 3rem;
-  font-size: 3rem;
-  text-align: center;
+  position: relative;
+  top: 12%;
+  left: 22%;
+  font-size: 2.5rem;
+  color: rgb(153, 249, 9);
+  text-shadow: 2px 1px 2px rgb(253, 101, 248);
+  z-index: 4000;
 }
 
 .inputs {
