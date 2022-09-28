@@ -203,7 +203,9 @@ footer {
   letter-spacing: 2px;
   background-color: var(--black);
   color: var(--bg-grey-lighter);
-  
+  position: absolute;
+  z-index: 4000;
+  width: 100%;
 }
 
 footer h1 {
@@ -221,13 +223,14 @@ footer span {
   justify-content: space-evenly;
   font-size: 1.3rem;
   padding-top: 3rem;
-  
+  background-color: var(--black);
 }
 
 .foot-box {
   display: flex;
   justify-content: space-evenly;
   z-index: 3000;
+  background-color: var(--black);
 }
 
 .foot-trinket {
@@ -314,8 +317,11 @@ footer span {
 .film-strip {
   position: absolute;
   left: 9%;
-  top: 58.5%;
+  top: 70%;
+  /* width: 100%;
+  max-width: 130px; */
   z-index: 1000;
+  overflow-y: scroll;
 }
 
 .text-right-align {
