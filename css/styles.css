@@ -15,11 +15,13 @@
 :root {
   --black: #4A4A4A;
   --red: #DF856E;
+  --pink: rgb(212, 73, 196);
   --paper: #F7F1DA;
   --yellow: #E3CCA1;
-  --green: #C4C3A9;
+  --green: rgb(196, 195, 169, 0.5);
   --bckgr-white:#F2F2EC;
   --bg-grey-light: #B4B4B4;
+  --bg-grey: #8C8080;
   --bg-grey-lighter: #d5d5d5;
   --bckgr-grey-dark: #959595;
   --bg-grey-darkest: #6e6d6d;
@@ -289,7 +291,8 @@ footer span {
 .hero-text {
   font-family: 'Cormorant Garamond', serif;
   font-size: 2.5rem;
-  color: var(--bg-grey-light);
+  color: var(--bg-grey);
+  text-shadow: 4px 4px 1px var(--green);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -307,7 +310,7 @@ footer span {
 
 .symbol-container h2 {
   font-family: 'Cormorant Garamond', serif;
-  color: var(--bg-grey-light);
+  color: var(--bg-grey);
   width: 100%;
   height: 30px;
   display: flex;
@@ -328,11 +331,12 @@ footer span {
 }
 
 .symbol {
-  height: 90px;
+  height: 100px;
   padding-right: 35px;
   padding-bottom: 4px;
   position: absolute;
   opacity: 20%;
+  color: var(--bg-grey);
 }
 
 .hero-img-behind {
@@ -343,6 +347,7 @@ footer span {
   width: 350px;
   height: 500px;
   object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
 }
 
 .hero-img-front {
@@ -353,6 +358,16 @@ footer span {
 .hero-img-front img {
   width: 500px;
   object-fit: contain;
+}
+
+.shadow {
+  position: absolute;
+  height: 520px;
+  width: 420px;
+  top: 13.5rem;
+  right: 7.5rem;
+  box-shadow: rgba(0, 0, 0, 1) -10px 10px 32px;
+  z-index: -1;
 }
 
 /* ----------------------------- <section class="posts"> */
@@ -443,7 +458,7 @@ footer span {
   font-size: 2rem;
   font-weight: 300;
   flex-wrap: wrap;
-  color: var(--bg-grey-light);
+  color: var(--bg-grey);
   width: 500px;
 }
 
