@@ -79,7 +79,7 @@ body {
   background: none;
   color: var(--red);
   margin: 3rem 0 3rem 15rem;
-  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  font-family: 'Alumni Sans', sans-serif;
   font-weight: bold;
   font-size: 2rem;
   display: flex;
@@ -381,6 +381,10 @@ footer span {
   z-index: 3000;
 }
 
+.posts .loader {
+  margin: auto;
+}
+
 .slider-wrapper {
   overflow: hidden;
   display: flex;
@@ -596,6 +600,11 @@ footer span {
   z-index: 5000;
 }
 
+.blog-grid .loader {
+  position: relative;
+  left: 100%;
+}
+
 .btn-blog {
   width: 100%;
   max-width: 250px;
@@ -765,6 +774,8 @@ form {
 
 label {
   color: var(--black);
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 input {
@@ -778,6 +789,7 @@ textarea {
   resize: none;
   background: none;
   border: none;
+  outline: none;
 }
 
 .form-error {
@@ -816,7 +828,7 @@ textarea {
   border: solid 2px transparent;
   background: none;
   cursor: pointer;
-  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  font-family: 'Alumni Sans', sans-serif;
   font-size: 2rem;
   font-weight: bold;
   padding: 0;
