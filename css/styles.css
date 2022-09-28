@@ -315,6 +315,7 @@ footer span {
   height: 30px;
   display: flex;
   justify-content: flex-end;
+  z-index: 3000;
 }
 
 .film-strip {
@@ -337,6 +338,7 @@ footer span {
   position: absolute;
   opacity: 20%;
   color: var(--bg-grey);
+  z-index: 3000;
 }
 
 .hero-img-behind {
@@ -468,7 +470,9 @@ footer span {
 }
 
 /* —————————  About page  ————————————————————————————————————————————— */
-
+.about {
+  background-color: white;
+}
 .about-container {
   margin: 0 auto;
 }
@@ -494,10 +498,6 @@ footer span {
   border-radius: 50%;
   object-fit: cover;
   margin: 3rem 5rem 1rem 5rem;
-}
-
-.about-content figcaption {
-  /* margin-bottom: 1rem; */
 }
 
 .selfie,
@@ -531,7 +531,6 @@ footer span {
   width: 15rem;
   align-self: flex-end;
   margin-right: 30%;
-  
 }
 
 .first,
@@ -576,7 +575,10 @@ footer span {
   flex-wrap: wrap;
 }
 
-
+.sand-storm,
+.theatre {
+  z-index: 3000;
+}
 
 
 
