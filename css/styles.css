@@ -229,7 +229,7 @@ footer span {
 .foot-box {
   display: flex;
   justify-content: space-evenly;
-  z-index: 3000;
+  /* z-index: 3000; */
   background-color: var(--black);
 }
 
@@ -318,10 +318,9 @@ footer span {
   position: absolute;
   left: 9%;
   top: 70%;
-  /* width: 100%;
-  max-width: 130px; */
+  width: 100%;
+  max-width: 130px;
   z-index: 1000;
-  overflow-y: scroll;
 }
 
 .text-right-align {
@@ -459,6 +458,10 @@ footer span {
   margin: 0 auto;
 }
 
+.about-container figure {
+  margin: 0;
+}
+
 .about-box {
   margin: 0 15rem;
   padding-top: 5rem;
@@ -475,14 +478,15 @@ footer span {
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 2rem 5rem;
+  margin: 3rem 5rem 1rem 5rem;
 }
 
 .about-content figcaption {
-  margin-bottom: 2rem;
+  /* margin-bottom: 1rem; */
 }
 
-.selfie {
+.selfie,
+.typewriter {
   align-self: flex-end;
   margin-top: 3rem;
 }
@@ -502,12 +506,21 @@ footer span {
 
 .headline {
   padding-top: 2rem;
+  margin-bottom: 2rem;
   align-self: flex-start;
   margin-left: 9rem;
   color: var(--black)
 }
 
+.headline-two {
+  width: 15rem;
+  align-self: flex-end;
+  margin-right: 30%;
+  
+}
+
 .first,
+.middle,
 .one,
 .two,
 .three {
@@ -524,13 +537,31 @@ footer span {
   margin-top: 1rem;
 }
 
-.three {
+.middle-wide {
+  width: 55%;
+}
+
+.middle-ultrawide {
+  width: 70%;
+}
+
+.one {
   align-self: flex-start;
+  width: 60%;
 }
 
 .two {
   align-self: flex-end;
+  flex-wrap: wrap;
+  width: 50%;
 }
+
+.three {
+  align-self: flex-start;
+  flex-wrap: wrap;
+}
+
+
 
 
 
