@@ -4,9 +4,7 @@
 const curl = "https://analogflowers.sjur.io/wp-json/wp/v2/posts?per_page=20&_embed"
 
 // Carousel Targets
-const sliderContainer = document.querySelector(".slider-container");
-const slide = document.querySelector(".slide");
-
+const sliderContainer = document.querySelector(".slider-container ");
 
 // Carousel API call
 async function createCarousel() {
@@ -53,17 +51,7 @@ const arrowLeft = document.querySelector(".fa-chevron-left");
 const arrowRight = document.querySelector(".fa-chevron-right");
 
 arrowLeft.addEventListener("click", function () {
-  if (slide <= 337) {
-    sliderContainer.scrollLeft -= 337;
-  }
-  else if (slide <= 100) {
-    sliderContainer.scrollLeft -= 735;
-  }
-  else if (slide <= 1100) {
-    sliderContainer.scrollLeft -= 1100;
-  }
-   
-  
+  sliderContainer.scrollLeft -= 1100;
 })
 arrowRight.addEventListener("click", function () {
   sliderContainer.scrollLeft += 1100;
