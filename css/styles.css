@@ -950,6 +950,12 @@ textarea {
   }
   .absolute-title {
     z-index: -1;
+    width: 500px;
+    font-size: 156px;
+    margin: 0 auto;
+  }
+  .about-box {
+    
   }
   
 }
