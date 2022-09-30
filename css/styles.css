@@ -1179,6 +1179,13 @@ textarea {
   }
   .blog .absolute-title {
     font-size: 3.5rem;
+    transform-origin: 72% 13rem;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  .blog .absolute-title {
+    transform-origin: 70% 13.3rem;
   }
 }
 
