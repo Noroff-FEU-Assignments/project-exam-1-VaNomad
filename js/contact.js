@@ -72,10 +72,16 @@ const messErr = (messageError.display === "");
 
 // Contact sent form function
 function formSent() {
-  if (!nameErr || !subErr || !emailErr || !messErr) {
+  // if (!nameErr || !subErr || !emailErr || !messErr) {
+  //   formBtn.innerHTML = "Message Sent";
+  //   thankYou.classList.remove("hidden");
+  // } else {
+  //   formBtn.innerHTML = "Send";
+  // }
+  if (!validateForm) {
     formBtn.innerHTML = "Message Sent";
     thankYou.classList.remove("hidden");
-  } else {
+    } else {
     formBtn.innerHTML = "Send";
   }
 }

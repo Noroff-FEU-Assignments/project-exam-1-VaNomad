@@ -920,10 +920,10 @@ textarea {
   .hero-right img {
     max-width: 80%;
   }
-  .hero-img-behind {
+  /* .hero-img-behind {
     right: -70px;
     overflow: hidden;
-  }
+  } */
   .symbol-container {
     z-index: 0;
   }
