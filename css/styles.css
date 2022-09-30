@@ -916,7 +916,7 @@ textarea {
     z-index: 0;
   }
   .blog .absolute-title {
-    font-size: 10rem;
+    font-size: 9.9rem;
   }
   
 }
@@ -1022,14 +1022,16 @@ textarea {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    max-width: 530px;
+    max-width: 400px;
   }
   .slide {
     margin-right: 0;
+    margin-left: 10rem;
+    width: 100%;
   }
   .blog .absolute-title {
-    transform-origin: 70% 16rem;
-    letter-spacing: 0;
+    transform-origin: 75% 19.5rem;
+    position: fixed;
   }
 
   
@@ -1060,6 +1062,10 @@ textarea {
   }
   .slide {
     min-width: 100%;
+  }
+  .blog .absolute-title {
+    font-size: 8rem;
+    transform-origin: 68% 18rem;
   }
 }
 
@@ -1123,8 +1129,33 @@ textarea {
     padding-right: 15px;
     padding-left: 40px;
   }
+  .blog-grid {
+    max-width: 300px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  
+  .blog .absolute-title {
+    font-size: 6rem;
+    transform-origin: 56% 14rem;
+  }
+  .blog-grid {
+    margin-right: 20%;
+  }
 }
+
+@media screen and (max-width: 450px) {
+  .absolute-title {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    transform: rotate(0deg);
+    z-index: 4000;
+    width: 300px;
+    letter-spacing: 0;
+  }
+  .blog-grid {
+    margin: 0 auto;
+  }
+}
+
+
