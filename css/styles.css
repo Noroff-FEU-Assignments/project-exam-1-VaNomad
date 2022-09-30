@@ -978,6 +978,9 @@ textarea {
     max-width: 600px;
     margin: 0 auto;
   }
+  .about-content figure {
+    z-index: 1;
+  }
   
 }
 
