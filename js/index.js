@@ -51,9 +51,9 @@ const arrowLeft = document.querySelector(".fa-chevron-left");
 const arrowRight = document.querySelector(".fa-chevron-right");
 
 arrowLeft.addEventListener("click", function () {
-  sliderContainer.scrollLeft -= 1100;
+  sliderContainer.scrollLeft -= 361;
 })
 arrowRight.addEventListener("click", function () {
-  sliderContainer.scrollLeft += 1100;
+  sliderContainer.scrollLeft += 361;
 })
 
