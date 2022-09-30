@@ -1146,15 +1146,39 @@ textarea {
 
 @media screen and (max-width: 450px) {
   .absolute-title {
-    margin-top: 5rem;
-    margin-left: 1rem;
-    transform: rotate(0deg);
     z-index: 4000;
     width: 300px;
     letter-spacing: 0;
+    font-size: 1rem;
+    
+  }
+  .slide {
+    margin-left: 8rem;
+  }
+  .blog .absolute-title {
+    font-size: 5rem;
+    transform-origin: 72% 14rem;
+  }
+  .logo a {
+    width: 100%;
+    min-width: 150px;
+  }
+  .btn.btn-blog {
+    margin: 2rem auto;
+    padding: 10px 20px;
+    width: 100px;
   }
   .blog-grid {
-    margin: 0 auto;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .slide {
+    margin-left: 8rem;
+  }
+  .blog .absolute-title {
+    font-size: 3.5rem;
   }
 }
 
