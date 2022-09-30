@@ -151,7 +151,6 @@ nav a {
 
 .logo {
   margin: auto 0;
-  padding-left: 80px;
   display: flex;
   flex-direction: column;
   max-width: 500px;
@@ -904,6 +903,7 @@ textarea {
     height: 100px;
     flex-direction: row;
     margin-top: 1rem;
+    padding-top: 2.5rem;
   }
   .text-right-align {
     align-self: flex-start;
@@ -917,13 +917,9 @@ textarea {
   .hero-left {
     height: 130px;
   }
-  .hero-right img {
-    max-width: 80%;
+  .hero-right {
+    padding-top: 2rem;
   }
-  /* .hero-img-behind {
-    right: -70px;
-    overflow: hidden;
-  } */
   .symbol-container {
     z-index: 0;
   }
@@ -1046,6 +1042,9 @@ textarea {
   .gallery-section .absolute-title {
     transform-origin: 65% 24rem;
     font-size: 11rem;
+  }
+  .hero-img-front {
+    padding-bottom: 0;
   }
 
   
