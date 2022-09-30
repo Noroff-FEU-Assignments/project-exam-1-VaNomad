@@ -40,6 +40,18 @@ function validateForm() {
   } else {
     messageError.style.display = "block";
   }
+
+  if (checkLength(name.value, 5) &&
+    checkLength(subject.value, 15) &&
+    validateEmail(email.value) &&
+    checkLength(message.value, 25)) {
+    name.value = "";
+    subject.value = "";
+    email.value = "";
+    message.value = "";
+    thankYou.classList.remove("hidden");
+  }
+
 }
 
 form.addEventListener("submit", validateForm);
@@ -49,8 +61,7 @@ form.addEventListener("submit", formSent);
 function checkLength(value, len) {
   if (value.trim().length > len) {
     return true;
-  }
-  else {
+  } else {
     return false;
   }
 }
@@ -65,23 +76,8 @@ function validateEmail(email) {
 console.log(validateEmail);
 
 // Contact sent form variables
-const nameErr = (nameError.display === "");
-const subErr = (subjectError.display === "");
-const emailErr = (emailError.display === "");
-const messErr = (messageError.display === "");
+
 
 // Contact sent form function
-function formSent() {
-  // if (!nameErr || !subErr || !emailErr || !messErr) {
-  //   formBtn.innerHTML = "Message Sent";
-  //   thankYou.classList.remove("hidden");
-  // } else {
-  //   formBtn.innerHTML = "Send";
-  // }
-  if (!validateForm) {
-    formBtn.innerHTML = "Message Sent";
-    thankYou.classList.remove("hidden");
-    } else {
-    formBtn.innerHTML = "Send";
-  }
-}
+// function formSent() { }
+  
