@@ -953,11 +953,15 @@ textarea {
     width: 500px;
     font-size: 156px;
     margin: 0 auto;
-    transform-origin: 28% 21.2rem;
-width: 445px;
+    transform-origin: 63% 11.2rem;
+    width: 445px;
   }
   .about-box {
     margin: 0 auto;
+  }
+  .headline {
+    padding-top: 5rem;
+    margin-bottom: 0;
   }
   
 }
