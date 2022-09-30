@@ -916,6 +916,7 @@ textarea {
   .nav-link {
     padding: 1rem;
     font-size: 1.4rem;
+    margin: 1rem auto;
   }
 
   .nav-link:active {
@@ -935,7 +936,7 @@ textarea {
   .mobile.active {
     position: absolute;
     top: 38px;
-    right: 42px;
+    right: 32px;
     transition: transform 0.5s;
     transform: rotate(270deg);
     color: var(--bg-grey-light);
