@@ -981,6 +981,11 @@ textarea {
   .about-content figure {
     z-index: 1;
   }
+  .about-content figcaption {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+  }
   
 }
 
