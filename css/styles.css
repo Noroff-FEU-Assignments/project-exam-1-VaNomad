@@ -882,6 +882,9 @@ textarea {
   .hero-right img {
     max-width: 80%;
   }
+  .hero-img-behind {
+    right: -70px;
+  }
   
 }
 
@@ -945,14 +948,18 @@ textarea {
 }
 
 @media screen and (max-width: 800px) {
+  .logo {
+    padding-left: 0;
+  }
   .film-strip {
     z-index: 1;
+    max-width: 110px;
   }
   .about-wrapper img {
     max-width: 250px;
   }
   .icon-image-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 20rem;
     margin-left: 20%;
   }
@@ -971,6 +978,7 @@ textarea {
 
 
 @media screen and (max-width: 680px) {
+  
   .foot-container {
     flex-direction: column;
     align-items: flex-start;
@@ -979,9 +987,55 @@ textarea {
   .mobile-spacer {
     padding-bottom: 1rem;
   }
+  .hero-text {
+    font-size: 1.5rem;
+  }
+  .symbol-container {
+    top: 3rem;
+    right: 80%;
+  }
+
 
 }
 
+@media screen and (max-width: 600px) {
+  .hero-container {
+    justify-content: space-around;
+  }
+  .hero-right {
+    padding-bottom: 12rem;
+  }
+  .hero-text {
+    padding-top: 3.2rem;
+  }
+  .symbol-container{
+    top: 5rem;
+    right: 70%;
+  }
+  .film-strip {
+    max-width: 100px;
+    top: 40rem;
+  }
+  .hero-img-behind {
+    right: -47px;
+  }
+  .hero-img-front {
+    padding-right: 50px;
+  }
+  .hero-img-behind img{
+    width: 100%;
+    max-height: 350px;
+  }
+  .hero-img-front img {
+    width: 100%;
+    max-height: 500px;
+  }
+  .icon-image-text {
+    font-size: 1.1rem;
+    padding-right: 15px;
+    padding-left: 40px;
+  }
+}
 
 @media screen and (max-width: 480px) {
   
