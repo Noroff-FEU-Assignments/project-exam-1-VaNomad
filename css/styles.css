@@ -35,7 +35,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: solid 1px red; */
+  outline: solid 1px red;
 }
 
 li {
@@ -861,7 +861,6 @@ textarea {
     align-items: flex-end;
     justify-content: center;
   }
-  
   .hero-text {
     height: 100px;
     flex-direction: row;
@@ -884,6 +883,10 @@ textarea {
   }
   .hero-img-behind {
     right: -70px;
+    overflow: hidden;
+  }
+  .symbol-container {
+    z-index: 0;
   }
   
 }
@@ -944,6 +947,9 @@ textarea {
 
   .loader-container {
     padding: 25%;
+  }
+  .absolute-title {
+    z-index: -1;
   }
   
 }
