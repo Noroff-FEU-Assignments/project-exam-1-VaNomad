@@ -592,7 +592,7 @@ footer span {
 
 /* —————————  Blog page  ————————————————————————————————————————————— */
 .blog-grid {
-  margin-right: 15%;
+  margin-right: 10%;
   padding: 150px 0 75px 0;
   display: grid;
   grid-template-columns: repeat(2, 350px);
@@ -838,6 +838,22 @@ textarea {
 
 /* —————————  Media Queries  ————————————————————————————————————————————— */
 
+@media screen and (max-width: 1270px) {
+  .blog-grid {
+    column-gap: 0;
+    row-gap: 30px;
+    margin-right: 5%;
+  }
+  .blog .absolute-title {
+    font-size: 14rem;
+    transform-origin: 80% 20rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  
+}
+
 @media screen and (max-width: 1150px) {
   .slider-wrapper {
     width: 767px;
@@ -846,13 +862,24 @@ textarea {
     margin-left: 0;
     min-width: 49.3%;
   }
+  .blog .absolute-title {
+    font-size: 12rem;
+  }
 }
+
 
 @media screen and (max-width: 1118px) {
   .about-wrapper img {
     z-index: 1000;
   }
 }
+@media screen and (max-width: 1050px) {
+  .blog .absolute-title {
+    font-size: 11rem;
+  }
+}
+
+
 
 @media screen and (max-width: 995px) {
   
@@ -887,6 +914,9 @@ textarea {
   }
   .symbol-container {
     z-index: 0;
+  }
+  .blog .absolute-title {
+    font-size: 10rem;
   }
   
 }
@@ -981,11 +1011,27 @@ textarea {
   .about-content figure {
     z-index: 1;
   }
-  .about-content figcaption {
+  figcaption {
     width: 100%;
     margin: 0 auto;
     max-width: 800px;
   }
+  /* blog page */
+  .blog-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 530px;
+  }
+  .slide {
+    margin-right: 0;
+  }
+  .blog .absolute-title {
+    transform-origin: 70% 16rem;
+    letter-spacing: 0;
+  }
+
   
 }
 
