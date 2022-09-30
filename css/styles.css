@@ -843,7 +843,8 @@ textarea {
     width: 767px;
   }
   .slide {
-    min-width: 47%;
+    margin-left: 0;
+    min-width: 49.3%;
   }
 }
 
@@ -960,15 +961,11 @@ textarea {
     margin: 2rem 0 0;
   }
   .slider-wrapper {
-    width: 383px;
+    width: 411px;
   }
   .slide {
-    min-width: 95%;
+    min-width: 100%;
   }
-  .slide-content {
-    min-width: 95%;
-  }
-
 }
 
 
