@@ -957,7 +957,7 @@ textarea {
 width: 445px;
   }
   .about-box {
-
+    margin: 0 auto;
   }
   
 }
