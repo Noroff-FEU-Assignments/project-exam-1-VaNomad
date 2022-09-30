@@ -716,7 +716,7 @@ figcaption {
 .gallery-container {
   padding-top: 8rem;
   padding-bottom: 2rem;
-  padding-left: 33%;
+  padding-left: 20rem;
   padding-right: 0;
 }
 
@@ -838,6 +838,16 @@ textarea {
 
 /* —————————  Media Queries  ————————————————————————————————————————————— */
 
+@media screen and (max-width: 1300px) {
+  .gallery-section .absolute-title {
+    transform-origin: 65% 24rem;
+    font-size: 12rem;
+  }
+  .gallery {
+    margin-right: 3rem;
+  }
+}
+
 @media screen and (max-width: 1270px) {
   .blog-grid {
     column-gap: 0;
@@ -851,7 +861,9 @@ textarea {
 }
 
 @media screen and (max-width: 1200px) {
-  
+  .gallery-container figure {
+    grid-template-columns: repeat(2, 300px);
+  } 
 }
 
 @media screen and (max-width: 1150px) {
