@@ -963,9 +963,20 @@ textarea {
     padding-top: 5rem;
     margin-bottom: 0;
   }
+  .headline.headline-two {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+  }
   .one {
     width: 100%;
     max-width: 698px;
+  }
+  .middle {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
   
 }
