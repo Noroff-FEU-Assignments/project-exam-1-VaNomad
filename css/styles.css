@@ -1173,8 +1173,6 @@ textarea {
     padding-left: 0;
   }
 
-
-
   .slider-wrapper {
     width: 411px;
   }
@@ -1204,7 +1202,11 @@ textarea {
   }
 }
 
-
+@media screen and (max-width: 720px) {
+  .film-strip {
+    top: 458px;
+  }
+}
 
 @media screen and (max-width: 680px) {
 
