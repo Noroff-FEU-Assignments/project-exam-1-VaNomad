@@ -459,8 +459,8 @@ footer span {
 
 .about-wrapper img {
   width: 400px;
-  align-self: flex-start;
-  margin-left: 10%;
+  margin-top: 1rem;
+  margin-right: 14%;
   filter: drop-shadow(-5px 5px 4px var(--black-shadow));
   z-index: 3000;
 }
@@ -997,6 +997,12 @@ textarea {
   .symbol-container {
     top: 6.8rem;
   }
+  .icon-image-text {
+    padding-left: 4.5rem;
+  }
+  .about-wrapper img {
+    margin-right: 5%;
+  }
 
   /* about page */
   .about-box {
@@ -1008,6 +1014,7 @@ textarea {
     font-size: 10rem;
     margin: .5rem auto;
     transform-origin: 40% 20rem;
+    z-index: 1;
   }
   .headline {
     padding-top: 5rem;
@@ -1077,6 +1084,7 @@ textarea {
   .film-strip {
     z-index: 1;
     max-width: 110px;
+    left: 7%;
   }
   .about-wrapper img {
     max-width: 250px;
@@ -1084,7 +1092,7 @@ textarea {
   .icon-image-text {
     font-size: 1.4rem;
     width: 20rem;
-    margin-left: 20%;
+    padding-left: 0;
   }
   .btn {
     font-size: 1.1rem;
@@ -1124,7 +1132,9 @@ textarea {
     top: 3rem;
     right: 80%;
   }
-  
+  .icon-image-text {
+    padding-left: 2rem;
+  }
   
   
 
@@ -1158,16 +1168,20 @@ textarea {
   }
   .icon-image-text {
     font-size: 1.1rem;
-    padding-right: 15px;
-    padding-left: 40px;
+    
+    padding-left: 5rem;
   }
   .blog-grid {
     max-width: 300px;
   }
-  .about-content img {
-    max-width: 250px;
-    max-height: 250px;
-    margin: 0 auto;
+  .about-content figure {
+    margin-top: 2rem;
+  }
+  figcaption {
+    padding: 1rem 0;
+  }
+  .about-wrapper img {
+    margin-right: -15%;
   }
   .about-box {
     padding: 8rem 1rem 5rem 6rem;
@@ -1235,6 +1249,12 @@ textarea {
   .blog-grid {
     padding-bottom: 0;
   }
+  .icon-image-text {
+    padding-left: 7rem;
+  }
+  .about-wrapper img {
+    margin-right: -20%;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -1244,6 +1264,9 @@ textarea {
   .blog .absolute-title {
     font-size: 3.5rem;
     transform-origin: 72% 13rem;
+  }
+  .about-wrapper img {
+    margin-right: -30%;
   }
 }
 
