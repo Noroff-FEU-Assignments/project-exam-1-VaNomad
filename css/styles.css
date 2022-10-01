@@ -755,8 +755,9 @@ figure {
 
 /* —————————  Contact page  ————————————————————————————————————————————— */
 .form .absolute-title {
-  font-size: 13rem;
-  transform-origin: 29% 34rem;
+  position: absolute;
+  font-size: 12rem;
+  transform-origin: 30% 33rem;
 }
 
 .form {
@@ -764,12 +765,12 @@ figure {
 }
 
 .form-wrapper {
-  padding-top: 6rem;
-  padding-bottom: 2rem;
-  padding-right: 0;
+  padding-top: 7rem;
+  padding-bottom: 1rem;
+  padding-left: 22%;
   display: flex;
-  justify-content: flex-end;
-  margin-right: 17%;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 form {
@@ -811,9 +812,9 @@ textarea {
 }
 
 .thank-you {
-  position: relative;
-  top: 12%;
-  left: 22%;
+  position: absolute;
+  top: 14%;
+  left: 24%;
   font-size: 2.5rem;
   color: rgb(153, 249, 9);
   text-shadow: 2px 1px 2px rgb(253, 101, 248);
@@ -879,6 +880,9 @@ textarea {
     row-gap: 25px;
     column-gap: 10px;
     margin-right: 1rem;
+  }
+  .form .absolute-title {
+    transform-origin: 39% 29rem;
   }
 }
 
@@ -1105,6 +1109,11 @@ textarea {
     grid-template-columns: repeat(1, 300px);
     grid-template-rows: repeat(12, 300px);
   }
+  .form .absolute-title {
+    position: absolute;
+    font-size: 8rem;
+    transform-origin: 38% 24rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -1147,6 +1156,14 @@ textarea {
     row-gap: 25px;
     
   } */
+  .form .absolute-title {
+    position: absolute;
+    font-size: 6rem;
+    transform-origin: 45% 22rem;
+  }
+  form {
+    margin-right: 5px;
+  }
 }
 
 
@@ -1270,6 +1287,13 @@ textarea {
   .gallery-container {
     padding-left: 12rem;
   }
+  .form .absolute-title {
+    font-size: 4rem;
+    transform-origin: 60% 18rem;
+  }
+  .form-wrapper {
+    padding-left: 11%;
+  }
   
 }
 
@@ -1304,6 +1328,16 @@ textarea {
   .about-content p {
     font-size: 1.1rem;
   }
+  .form .absolute-title {
+    font-size: 3rem;
+    transform-origin: 58% 16rem;
+  }
+  .form-wrapper {
+    padding-left: 6%;
+  }
+  form {
+    padding: 2rem;
+  }
 
 }
 
@@ -1332,6 +1366,9 @@ textarea {
   .gallery-container {
     padding-left: 7rem;
   }
+  .form .absolute-title {
+    transform-origin: 61% 15.5rem;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -1351,6 +1388,13 @@ textarea {
   .gallery-section .absolute-title{
     transform-origin: 94% 12rem;
     font-size: 4rem;
+  }
+  .form .absolute-title {
+    font-size: 2rem;
+    transform-origin: 61% 14rem;
+  }
+  form {
+    padding: 1rem;
   }
 }
 
