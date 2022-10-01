@@ -1008,6 +1008,11 @@ textarea {
     margin: 0 auto;
   }
 
+  .polaroid {
+    width: 100%;
+    max-width: 370px;
+  }
+
   .hero-text {
     margin-top: -5px;
     display: block;
