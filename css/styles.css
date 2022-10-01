@@ -450,11 +450,11 @@ footer span {
 }
 
 .about-wrapper {
-  margin-left: 15%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem;
+  
 }
 
 .about-wrapper img {
@@ -485,17 +485,13 @@ footer span {
 .about {
   background-color: white;
 }
-.about-container {
-  margin: 0 auto;
-}
-
 .about-container figure {
   margin: 0;
 }
 
 .about-box {
-  margin: 0 15rem;
-  padding-top: 5rem;
+  margin-left: 5rem;
+  padding: 5rem;
 }
 
 .about-content {
@@ -587,8 +583,7 @@ footer span {
   flex-wrap: wrap;
 }
 
-.sand-storm,
-.theatre {
+.sand-storm {
   z-index: 3000;
 }
 
@@ -1004,17 +999,15 @@ textarea {
   }
 
   /* about page */
-  .about-container {
-    padding-left: 10rem;
+  .about-box {
+    padding: 5rem 0 5rem 8rem;
+    margin: 0;
   }
   .about-container .absolute-title {
     position: fixed;
     font-size: 10rem;
     margin: .5rem auto;
-    transform-origin: 41% 20rem;
-  }
-  .about-box {
-    margin: 0 auto;
+    transform-origin: 40% 20rem;
   }
   .headline {
     padding-top: 5rem;
@@ -1044,6 +1037,10 @@ textarea {
     width: 100%;
     max-width: 800px;
     margin-left: 0 2rem;
+  }
+  .first {
+    width: 100%;
+    max-width: 400px;
   }
   .about-content figure {
     z-index: 1;
@@ -1127,13 +1124,8 @@ textarea {
     top: 3rem;
     right: 80%;
   }
-  .about-container {
-    padding-left: 5rem;
-  }
-  .about-container .absolute-title {
-    font-size: 7.5rem;
-    transform-origin: 38% 18rem;
-  }
+  
+  
   
 
 }
@@ -1172,23 +1164,36 @@ textarea {
   .blog-grid {
     max-width: 300px;
   }
-  .about-container {
-    padding-left: 3rem;
-  }
   .about-content img {
     max-width: 250px;
     max-height: 250px;
+    margin: 0 auto;
+  }
+  .about-box {
+    padding: 8rem 1rem 5rem 6rem;
+  }
+  .about-container .absolute-title {
+    font-size: 6rem;
+    transform-origin: 38% 13rem;
   }
 }
 
 @media screen and (max-width: 480px) {
+
+  .about-content figure{
+    align-self: center;
+  }
+  .headline {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    width: 250px;
+    padding-top: 2rem;
+  }
   .blog .absolute-title {
     font-size: 6rem;
     transform-origin: 56% 14rem;
   }
-  .blog-grid {
-    margin-right: 20%;
-  }
+  
   .about-container .absolute-title {
     font-size: 5rem;
     transform-origin: 35% 15rem;
