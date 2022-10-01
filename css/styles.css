@@ -1230,9 +1230,7 @@ textarea {
     font-size: 1rem;
     
   }
-  .slide {
-    margin-left: 8rem;
-  }
+  
   .blog .absolute-title {
     font-size: 5rem;
     transform-origin: 72% 14rem;
@@ -1258,15 +1256,16 @@ textarea {
 }
 
 @media screen and (max-width: 420px) {
-  .slide {
-    margin-left: 8rem;
-  }
+
   .blog .absolute-title {
     font-size: 3.5rem;
     transform-origin: 72% 13rem;
   }
   .about-wrapper img {
     margin-right: -30%;
+  }
+  .slider-wrapper {
+    width: 380px;
   }
 }
 
