@@ -1104,6 +1104,9 @@ textarea {
   .mobile-spacer {
     padding-bottom: 1rem;
   }
+  .hero-left {
+    padding-top: 1rem;
+  }
   .hero-text {
     font-size: 1.5rem;
   }
