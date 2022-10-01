@@ -931,6 +931,8 @@ textarea {
 
 
 @media screen and (max-width: 940px) {
+
+  /* nav */
   .nav-menu {
     background-color: var(--black);
     padding: 4rem;
@@ -942,38 +944,31 @@ textarea {
     transition-duration: .5s;
     align-items: center;
   }
-
   .nav-menu span {
     font-weight: 900;
     font-size: 1.7rem;
   }
-
   .mobile {
     display: block;
     transition: transform 0.5s;
     transform: rotate(0deg);
   }
-  
   .nav-link {
     padding: 1rem;
     font-size: 1.4rem;
     margin: 1rem auto;
   }
-
   .nav-link:active {
     background-color: var(--bckgr-white);
     color: var(--black);
   }
-
   .nav-link:hover {
     font-weight: bold;
   }
-  
   .nav-menu.active {
     left: 0;
     top: 0;
   }
-
   .mobile.active {
     position: absolute;
     top: 38px;
@@ -983,9 +978,17 @@ textarea {
     color: var(--bg-grey-light);
   }
 
+  /* loader */
   .loader-container {
     padding: 25%;
   }
+
+  /* home page */
+  .hero-img-front {
+    padding-bottom: 0;
+  }
+
+  /* about page */
   .about-container .absolute-title {
     z-index: -1;
     font-size: 10rem;
@@ -1030,22 +1033,17 @@ textarea {
     margin: 0 auto;
     max-width: 400px;
   }
-  .slide {
-    margin-right: 0;
-    margin-left: 10rem;
-    width: 100%;
-  }
   .blog .absolute-title {
     transform-origin: 75% 19.5rem;
     position: fixed;
   }
+
+  /* gallery page */
   .gallery-section .absolute-title {
     transform-origin: 65% 24rem;
     font-size: 11rem;
   }
-  .hero-img-front {
-    padding-bottom: 0;
-  }
+  
 
   
 }
@@ -1106,14 +1104,8 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
-  .hero-container {
-    justify-content: space-around;
-  }
-  .hero-right {
-    padding-bottom: 12rem;
-  }
   .hero-text {
-    padding-top: 3.2rem;
+  margin-top: 0; 
   }
   .symbol-container{
     top: 5rem;
