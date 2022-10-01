@@ -476,7 +476,7 @@ footer span {
 }
 
 .about-wrapper .btn {
-  align-self: flex-end;
+  align-self: center;
   margin-right: 10%;
   filter: drop-shadow(-5px 5px 3px var(--black-shadow));
 
