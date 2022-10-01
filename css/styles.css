@@ -35,7 +35,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: solid 1px red; */
+  outline: solid 1px red;
 }
 
 li {
@@ -315,7 +315,6 @@ footer span {
   font-family: 'Cormorant Garamond', serif;
   letter-spacing: 1px;
   color: var(--bg-grey);
-  width: 100%;
   display: flex;
   justify-content: flex-end;
   z-index: 3000;
@@ -902,7 +901,7 @@ textarea {
   .hero-text {
     height: 100px;
     flex-direction: row;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding-top: 2.5rem;
   }
   .text-right-align {
@@ -911,7 +910,7 @@ textarea {
   }
   .symbol-container {
    position: relative;
-   top: 8rem;
+   top: 7rem;
    right: 100%;
   }
   .hero-left {
@@ -987,6 +986,15 @@ textarea {
   /* home page */
   .hero-img-front {
     padding-bottom: 0;
+  }
+  .hero-text {
+    margin-top: -5px;
+  }
+  .hero-right {
+    padding-top: .2rem;
+  }
+  .symbol-container {
+    top: 6.8rem;
   }
 
   /* about page */
