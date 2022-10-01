@@ -35,7 +35,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: solid 1px red;
+  /* outline: solid 1px red; */
 }
 
 li {
@@ -958,12 +958,13 @@ textarea {
     font-size: 1.4rem;
     margin: 1rem auto;
   }
-  .nav-link:active {
-    background-color: var(--bckgr-white);
-    color: var(--black);
-  }
   .nav-link:hover {
-    font-weight: bold;
+    border: solid 1px var(--bckgr-white);
+  }
+  .nav-link[aria-current="page"]{
+    background-color: var(--bckgr-white);
+    border: solid 1px var(--bckgr-white);
+    color: var(--black);
   }
   .nav-menu.active {
     left: 0;
@@ -1043,9 +1044,6 @@ textarea {
     transform-origin: 65% 24rem;
     font-size: 11rem;
   }
-  
-
-  
 }
 
 @media screen and (max-width: 800px) {
