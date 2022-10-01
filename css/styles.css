@@ -1027,6 +1027,28 @@ textarea {
 
   .symbol-container {
     top: 6.8rem;
+    width: 100%;
+    max-width: 250px;
+    width: 100%;
+    max-width: 123px;
+    width: 100%;
+    max-width: 123px;
+    position: relative;
+    left: -67px;
+    top: 212.6px;
+
+  }
+
+  .symbol {
+    width: 100%;
+    max-width: 128px;
+  }
+
+  .symbol-name {
+    width: 100%;
+    max-width: 114px;
+    height: 197px;
+    align-items: center;
   }
 
   .icon-image-text {
