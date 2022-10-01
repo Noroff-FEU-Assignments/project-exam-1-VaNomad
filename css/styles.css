@@ -733,8 +733,9 @@ figure {
   grid-template-rows: repeat(4, 300px);
 }
 
-figcaption {
+.gallery figcaption {
   color: var(--bg-grey-darkest);
+  padding: .5rem;
 }
 
 .wp-block-image {
@@ -746,6 +747,8 @@ figcaption {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.gallery-image figure {
   padding: 10px;
 }
 
@@ -854,6 +857,7 @@ textarea {
 @media screen and (max-width: 1200px) {
   .gallery-container figure {
     grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(6, 300px);
   }
 }
 
@@ -1071,7 +1075,7 @@ textarea {
     z-index: 1;
   }
 
-  figcaption {
+  .about-content figcaption {
     width: 100%;
     margin: 0 auto;
     max-width: 600px;
@@ -1089,9 +1093,17 @@ textarea {
   }
 
   /* gallery page */
+  
   .gallery-section .absolute-title {
     transform-origin: 65% 24rem;
     font-size: 11rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .gallery-container figure {
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(12, 300px);
   }
 }
 
@@ -1226,7 +1238,7 @@ textarea {
     margin-top: 2rem;
   }
 
-  figcaption {
+  .about-content figcaption {
     padding: 1rem 0;
   }
 
@@ -1250,6 +1262,13 @@ textarea {
   }
   .blog .absolute-title {
     transform-origin: 87% 15rem;
+  }
+  .gallery-section .absolute-title{
+    transform-origin: 68% 18rem;
+    font-size: 8rem;
+  }
+  .gallery-container {
+    padding-left: 12rem;
   }
   
 }
@@ -1306,6 +1325,13 @@ textarea {
   .about-wrapper img {
     margin-right: -20%;
   }
+  .gallery-section .absolute-title{
+    transform-origin: 80% 13rem;
+    font-size: 5rem;
+  }
+  .gallery-container {
+    padding-left: 7rem;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -1321,6 +1347,10 @@ textarea {
 
   .slider-wrapper {
     width: 380px;
+  }
+  .gallery-section .absolute-title{
+    transform-origin: 94% 12rem;
+    font-size: 4rem;
   }
 }
 
