@@ -1196,11 +1196,14 @@ textarea {
   
   .about-container .absolute-title {
     font-size: 5rem;
-    transform-origin: 35% 15rem;
+    transform-origin: 28% 10rem;
   }
   .about-content img {
     max-width: 200px;
     max-height: 200px;
+  }
+  .about-content p {
+    font-size: 1.1rem;
   }
   
 }
@@ -1249,5 +1252,14 @@ textarea {
     transform-origin: 70% 13.3rem;
   }
 }
+
+@media screen and (max-width: 396px) {
+  .about-container .absolute-title {
+    font-size: 4rem;
+    transform-origin: 28% 8.5rem;
+  }
+}
+
+
 
 
