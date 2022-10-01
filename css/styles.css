@@ -29,6 +29,12 @@
   --bg-paper: rgb(242, 241, 232);
   --transparent: rgba(0, 0, 0, 0.3);
   --black-shadow: rgb(54, 52, 52, 0.3);
+
+  --black-new: #2A2C54;
+  --red-new: #C25769;
+  --burgundy-new: #7E465E;
+  --purple-new: #4A3859;
+
 }
 
 * {
