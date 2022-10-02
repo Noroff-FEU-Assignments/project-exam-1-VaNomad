@@ -412,7 +412,6 @@ footer span {
   display: flex;
   overflow: scroll;
   scroll-behavior: smooth;
-  border: solid 1px red;
 }
 
 .slide {
