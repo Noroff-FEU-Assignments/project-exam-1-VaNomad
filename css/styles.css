@@ -20,6 +20,7 @@
   --yellow: #E3CCA1;
   --green-transparent: rgb(196, 195, 169, 0.5);
   --green: rgb(196, 195, 169);
+  --green-neon: #8adf0a;
   --bckgr-white: #F2F2EC;
   --bg-grey-light: #B4B4B4;
   --bg-grey: #8C8080;
@@ -29,6 +30,7 @@
   --bg-paper: rgb(242, 241, 232);
   --transparent: rgba(0, 0, 0, 0.3);
   --black-shadow: rgb(54, 52, 52, 0.5);
+
 
   --black-new: #2A2C54;
   --red-new: #C25769;
@@ -804,8 +806,8 @@ textarea {
   top: 14%;
   left: 24%;
   font-size: 2.5rem;
-  color: rgb(153, 249, 9);
-  text-shadow: 2px 1px 2px rgb(253, 101, 248);
+  color: var(--green-neon);
+  text-shadow: 2px 1px 2px var(--red);
   z-index: 4000;
 }
 
@@ -986,6 +988,10 @@ textarea {
     color: var(--bg-grey-light);
   }
 
+  .logo-mobile.active {
+    z-index: 6000;
+  }
+
   /* loader */
   .loader-container {
     padding: 25%;
@@ -1110,12 +1116,20 @@ textarea {
 
   .blog .absolute-title {
     position: fixed;
+    z-index: 1;
   }
 
   /* Gallery page */
   .gallery-section .absolute-title {
     transform-origin: 65% 24rem;
     font-size: 11rem;
+    position: fixed;
+    z-index: 1;
+  }
+
+  /* Contact page */
+  .form .absolute-title {
+    z-index: 1;
   }
 }
 
@@ -1188,6 +1202,10 @@ textarea {
 
   form {
     margin-right: 5px;
+  }
+
+  .thank-you {
+    font-size: 1.8rem;
   }
 }
 
@@ -1348,6 +1366,12 @@ textarea {
   .form-wrapper {
     padding-left: 11%;
   }
+
+  .thank-you {
+    font-size: 1.5rem;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1395,6 +1419,11 @@ textarea {
 
   form {
     padding: 2rem;
+  }
+
+  .thank-you {
+    font-size: 1.3rem;
+    left: 60px;
   }
 }
 
@@ -1483,6 +1512,10 @@ textarea {
 
   form {
     padding: 1rem;
+  }
+
+  .thank-you {
+    left: 50px;
   }
 }
 

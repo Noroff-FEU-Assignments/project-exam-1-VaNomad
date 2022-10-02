@@ -9,10 +9,14 @@ document.querySelectorAll(".nav-link").forEach(link => {
 /* —————————  mobile menu  ———————————————————————————————————————— */
 const mobile = document.querySelector(".mobile");
 const navMenu = document.querySelector(".nav-menu");
+const logo = document.querySelector(".logo-mobile");
+
 
 const mobileMenu = () => {
   mobile.classList.toggle("active");
   navMenu.classList.toggle("active");
+  logo.classList.toggle("active");
 }
 
 mobile.addEventListener("click", mobileMenu);
+
