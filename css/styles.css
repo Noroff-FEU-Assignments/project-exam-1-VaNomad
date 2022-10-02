@@ -960,7 +960,7 @@ textarea {
     padding: 4rem;
     position: fixed;
     width: 100%;
-    top: -200%;
+    top: -100%;
     left: 0;
     flex-direction: column;
     transition-duration: .5s;
