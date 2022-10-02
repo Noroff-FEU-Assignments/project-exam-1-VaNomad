@@ -1489,6 +1489,10 @@ textarea {
     grid-template-columns: 300px;
   }
 
+  .loader-container {
+    padding: 10%;
+  }
+  
   /* Gallery page */
   .gallery-section .absolute-title {
     transform-origin: 80% 13rem;
