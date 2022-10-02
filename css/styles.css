@@ -1202,11 +1202,11 @@ textarea {
   }
 }
 
-@media screen and (max-width: 720px) {
+/* @media screen and (max-width: 720px) {
   .film-strip {
     top: 458px;
   }
-}
+} */
 
 @media screen and (max-width: 680px) {
 
