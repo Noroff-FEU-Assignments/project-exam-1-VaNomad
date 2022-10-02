@@ -28,7 +28,7 @@
   --bg-grey-darkest: #6e6d6d;
   --bg-paper: rgb(242, 241, 232);
   --transparent: rgba(0, 0, 0, 0.3);
-  --black-shadow: rgb(54, 52, 52, 0.3);
+  --black-shadow: rgb(54, 52, 52, 0.5);
 
   --black-new: #2A2C54;
   --red-new: #C25769;
@@ -295,7 +295,7 @@ footer span {
 .hero-right {
   display: flex;
   justify-content: end;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .hero-text {
@@ -327,12 +327,23 @@ footer span {
   z-index: 3000;
 }
 
-.film-strip {
+.film-strip-0 {
   position: absolute;
-  left: 9%;
-  top: 70%;
+  top: 500px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.film-strip {
+  position: relative;
+  padding-left: 30px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  max-width: 120px;
+  max-width: 150px;
   z-index: 1000;
 }
 
@@ -363,7 +374,7 @@ footer span {
 
 .hero-img-front {
   padding: 30px 85px 30px 0;
-  z-index: 1000;
+  z-index: 2000;
 }
 
 .hero-img-front img {
@@ -371,7 +382,6 @@ footer span {
   object-fit: contain;
   filter: drop-shadow(-5px 5px 8px var(--black-shadow));
   background: none;
-
 }
 
 
@@ -1158,9 +1168,7 @@ textarea {
   }
 
   .film-strip {
-    z-index: 1;
-    max-width: 110px;
-    left: 8%;
+    max-width: 145px;
   }
 
   .about-wrapper img {
@@ -1266,8 +1274,7 @@ textarea {
   }
 
   .film-strip {
-    max-width: 100px;
-    top: 40rem;
+    max-width: 140px;
   }
 
   .hero-img-behind {
