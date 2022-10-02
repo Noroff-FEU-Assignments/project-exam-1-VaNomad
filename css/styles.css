@@ -43,7 +43,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: solid 1px red; */
+  outline: solid 1px red;
 }
 
 li {
@@ -1400,6 +1400,11 @@ textarea {
     font-size: 1.1rem;
   }
 
+  /* Gallery page */
+  .gallery-container {
+    padding-left: 8rem;
+  }
+
   /* Blog page */
   .blog .absolute-title {
     font-size: 4rem;
@@ -1499,8 +1504,12 @@ textarea {
 
   /* Gallery page */
   .gallery-section .absolute-title {
-    transform-origin: 94% 12rem;
-    font-size: 4rem;
+    transform-origin: 100% 11.5rem;
+    font-size: 3.5rem;
+  }
+
+  .gallery-container {
+    padding-left: 5rem;
   }
 
   /* Contact page */
