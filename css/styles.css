@@ -1515,6 +1515,7 @@ textarea {
   .hero-text {
     font-size: 1.4rem;
     justify-content: center;
+    max-width: 350px;
   }
 
   .about-wrapper img {
@@ -1522,7 +1523,11 @@ textarea {
   }
 
   .slider-wrapper {
-    width: 380px;
+    max-width: 380px;
+  }
+
+  .slide {
+    margin-right: 46px;
   }
 
   /* Blog page */
