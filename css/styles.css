@@ -1482,8 +1482,8 @@ textarea {
   .hero-img-front {
     justify-content: center;
     align-items: center;
-    padding: 0;
-    margin: 0 auto;
+    padding-right: 60px;
+    max-width: 350px;
   }
 
   .icon-image-text {
@@ -1538,6 +1538,10 @@ textarea {
     font-size: 1.4rem;
     justify-content: center;
     max-width: 350px;
+  }
+
+  .hero-img-front {
+    padding-right: 50px;
   }
 
   .about-wrapper img {
