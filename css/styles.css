@@ -835,6 +835,7 @@ textarea {
 
 /* —————————  Media Queries  ————————————————————————————————————————————— */
 @media screen and (max-width: 1300px) {
+
   /* Gallery page */
   .gallery-section .absolute-title {
     transform-origin: 65% 24rem;
@@ -847,6 +848,7 @@ textarea {
 }
 
 @media screen and (max-width: 1200px) {
+
   /* Gallery page */
   .gallery-container figure {
     grid-template-columns: repeat(2, 300px);
@@ -855,6 +857,7 @@ textarea {
 }
 
 @media screen and (max-width: 1150px) {
+
   /* Home page */
   .slider-wrapper {
     width: 767px;
@@ -884,6 +887,7 @@ textarea {
 }
 
 @media screen and (max-width: 1118px) {
+
   /* About page */
   .about-wrapper img {
     z-index: 1000;
@@ -891,8 +895,9 @@ textarea {
 }
 
 @media screen and (max-width: 995px) {
+
   /* Home page  */
-   .hero-container {
+  .hero-container {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
@@ -934,6 +939,7 @@ textarea {
 
 
 @media screen and (max-width: 940px) {
+
   /* nav */
   .nav-menu {
     background-color: var(--black);
@@ -1134,6 +1140,7 @@ textarea {
 }
 
 @media screen and (max-width: 900px) {
+
   /* Home page */
   .hero-text {
     margin-right: 10rem;
@@ -1154,6 +1161,7 @@ textarea {
 }
 
 @media screen and (max-width: 800px) {
+
   /* nav */
   .logo {
     padding-left: 0;
@@ -1210,6 +1218,7 @@ textarea {
 }
 
 @media screen and (max-width: 680px) {
+
   /* footer */
   .foot-container {
     flex-direction: column;
@@ -1270,6 +1279,7 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
+
   /* Home page */
   .hero-text {
     margin-top: 0;
@@ -1333,6 +1343,19 @@ textarea {
   .about-container .absolute-title {
     font-size: 6rem;
     transform-origin: 38% 13rem;
+  }
+
+  .selfie,
+  .typewriter,
+  .sand-storm {
+    align-self: center;
+  }
+
+  .about-content img {
+    max-width: 250px;
+    max-height: 250px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* Blog page */
@@ -1432,6 +1455,7 @@ textarea {
 }
 
 @media screen and (max-width: 450px) {
+
   /* nav */
   .logo a {
     width: 100%;
@@ -1439,7 +1463,7 @@ textarea {
   }
 
   /* Home page */
-  .hero-img-front{
+  .hero-img-front {
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -1482,6 +1506,7 @@ textarea {
 }
 
 @media screen and (max-width: 420px) {
+
   /* Home page */
   .hero-text {
     font-size: 1.4rem;
@@ -1528,6 +1553,7 @@ textarea {
 }
 
 @media screen and (max-width: 400px) {
+
   /* About page */
   .about-container .absolute-title {
     font-size: 4rem;
