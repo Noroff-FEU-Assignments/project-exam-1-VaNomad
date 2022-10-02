@@ -21,7 +21,6 @@ async function createBlog() {
   } catch (error) {
     console.log(error);
     container.innerHTML = ("The resource can not be found", error)
-    
   }
 }
 

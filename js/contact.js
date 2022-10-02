@@ -74,10 +74,3 @@ function validateEmail(email) {
 }
 
 console.log(validateEmail);
-
-// Contact sent form variables
-
-
-// Contact sent form function
-// function formSent() { }
-  

@@ -34,13 +34,6 @@ async function createDetails() {
   const modalImg = document.querySelector(".modal-image");
   const span = document.querySelector(".close");
   
-  // const apiImg = document.querySelector("figure img");
-  
-  // for (let i = 0; i < apiImgs.length; i++) {
-  //   console.log(i);
-  // }
-  
-
   // Modal Open
   apiImgs.onclick = function (event) {
   modal.style.display = "block";
@@ -57,10 +50,6 @@ async function createDetails() {
     }
   }
 
-  
-
-
-
 }
 
 createDetails();
@@ -73,49 +62,5 @@ function createHtml(data) {
                     <div class="details">${data.content.rendered}</div>
                   `
 }
-
-
-
-
-
-/* —————————  Modal  ———————————————————————————————————————————————————— */
-
-// Modal Targets
-
-// const images = document.querySelectorAll("figure img");
-// div wrapper
-// const image = document.querySelector(".bttn"); // div wrapper
-// img tag
-// const modal = document.querySelector(".modal"); // img tag
-// api call result
-// 
-
-
-
-
-
-
-// Modal Open
-// image.onclick = function () {
-//   modal.style.display = "block";
-// }
-
-
-
-// Modal Close w/span
-// span.onclick = function () {
-//   modal.style.display = "none";
-// }
-
-
-
-// Modal Close w/outside click
-// window.onclick = function () {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
-
-
 
 

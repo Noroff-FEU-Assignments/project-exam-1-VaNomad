@@ -35,12 +35,6 @@ async function createGallery() {
   const modal = document.querySelector(".modal"); //wrapper
   const modalImg = document.querySelector(".modal-image");
   const span = document.querySelector(".close");
-  // const apiImg = document.querySelector("figure img");
-  
-  // for (let i = 0; i < apiImgs.length; i++) {
-  //   console.log(i);
-  // }
-  
 
   // Modal Open
   apiImgs.onclick = function (event) {
@@ -57,16 +51,7 @@ async function createGallery() {
       modal.style.display = "none";
     }
   }
-
-
-
-
-
-
-
-
-
-
+  
 }
 
 createGallery();

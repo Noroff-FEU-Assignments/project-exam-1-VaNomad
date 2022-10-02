@@ -19,8 +19,6 @@ async function fetchAbout() {
 
     aboutContainer.innerHTML = "";
 
-  
-
     aboutContainer.innerHTML = 
     `
                              <div class="about-box">
@@ -28,29 +26,12 @@ async function fetchAbout() {
                                <div class="about-content">${data.content.rendered}</div>
                               </div>
     `
-
   } catch (error) {
     console.log(error);
     aboutContainer.innerHTML = ("The image can not be found", error)
-    
   }
 }
 
 fetchAbout();
 
-// function createAbout(data) {
-//   console.log(data);
-  
-  
-//     aboutContainer.innerHTML =
-//       `
-//                    <div class="about-content">
-//                     <h1 class="page-title">hello</h1>
-//                      <img src="https://analogflowers.sjur.io/wp-content/uploads/2022/09/9E8AAD11-4975-490B-9FCA-0F71830EF8A7_1_105_c.jpg">
-//                      <h2>"${data.excerpt.rendered}"</h2>
-//                      <p></p> 
-//                    </div>
-//                      `
-   
-// }
- 
+
