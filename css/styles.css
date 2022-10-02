@@ -1122,7 +1122,7 @@ textarea {
 
   .blog .absolute-title {
     position: fixed;
-    z-index: 1;
+    z-index: 3000;
   }
 
   /* Gallery page */
@@ -1527,6 +1527,10 @@ textarea {
     transform-origin: 98% 11rem;
   }
 
+  .blog-grid {
+    margin-left: 3rem;
+  }
+
   /* Gallery page */
   .gallery-section .absolute-title {
     transform-origin: 100% 11.5rem;
@@ -1558,10 +1562,5 @@ textarea {
   .about-container .absolute-title {
     font-size: 4rem;
     transform-origin: 28% 8.5rem;
-  }
-
-  /* Blog page */
-  .blog-grid {
-    margin-left: 4.5rem;
   }
 }
