@@ -38,7 +38,7 @@ function createHtml(data) {
                     <div class="slide-content">
                       <img src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
                       <div class>
-                        <h1 class="slide-date">${data[i].title.rendered}</h1>
+                        <h2 class="slide-date">${data[i].title.rendered}</h2>
                       </div>
                     </div>
                   </a>

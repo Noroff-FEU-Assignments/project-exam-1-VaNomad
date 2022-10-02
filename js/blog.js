@@ -78,7 +78,7 @@ function loadMoreHTML(data) {
                   <a href="details.html?id=${data[i].id}" class="slide">
                     <img src="${data[i]._embedded['wp:featuredmedia']['0'].source_url}">
                     <div>  
-                      <h1 class="date">${data[i].title.rendered}</h1>
+                      <h2 class="date">${data[i].title.rendered}</h2>
                     </div>
                   </a>
                   `

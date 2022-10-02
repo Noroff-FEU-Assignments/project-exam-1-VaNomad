@@ -24,7 +24,7 @@ async function fetchAbout() {
     aboutContainer.innerHTML = 
     `
                              <div class="about-box">
-                             <h1 class="absolute-title">about</h1>
+                             <h2 class="absolute-title">about</h2>
                                <div class="about-content">${data.content.rendered}</div>
                               </div>
     `
