@@ -889,16 +889,14 @@ textarea {
 }
 
 @media screen and (max-width: 995px) {
-  /* Home page */
-  .hero-container {
+  /* Home page  */
+   .hero-container {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
   }
 
   .hero-text {
-    height: 100px;
-    flex-direction: row;
     margin-top: 1.5rem;
     padding-top: 2.5rem;
   }
@@ -924,6 +922,11 @@ textarea {
 
   .symbol-container {
     z-index: 0;
+  }
+
+  .polaroid {
+    width: 100%;
+    max-width: 370px;
   }
 }
 
@@ -996,11 +999,6 @@ textarea {
     margin: 0 auto;
   }
 
-  .polaroid {
-    width: 100%;
-    max-width: 370px;
-  }
-
   .hero-text {
     margin-top: -5px;
     display: block;
@@ -1015,16 +1013,17 @@ textarea {
 
   .symbol-container {
     width: 100%;
-    max-width: 123px;
+    max-width: 150px;
+    /* left: -240px; */
     position: relative;
-    margin-top: 50px;
-    left: -113px;
-    top: 212.6px;
+    margin-top: 10px;
+    left: -250px;
+    top: 50px;
   }
 
   .symbol {
     width: 100%;
-    max-width: 128px;
+    max-width: 130px;
   }
 
   .symbol-name {
@@ -1121,6 +1120,11 @@ textarea {
 }
 
 @media screen and (max-width: 900px) {
+  /* Home page */
+  .hero-text {
+    margin-right: 10rem;
+  }
+
   /* Gallery page */
   .gallery-container figure {
     grid-template-columns: repeat(1, 300px);
@@ -1144,6 +1148,11 @@ textarea {
   /* Home page */
   .film-strip {
     max-width: 145px;
+  }
+
+  .symbol-container {
+    left: 200px;
+    top: -210px;
   }
 
   .about-wrapper img {
@@ -1200,12 +1209,26 @@ textarea {
   }
 
   .hero-text {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
   }
 
   .symbol-container {
-    top: 3rem;
-    right: 80%;
+    left: -240px;
+    top: 50px;
+  }
+
+  .symbol {
+    max-width: 100px;
+    max-height: 70px;
+  }
+
+  .symbol-name {
+    font-size: 1.2rem;
   }
 
   .icon-image-text {
@@ -1232,11 +1255,12 @@ textarea {
   /* Home page */
   .hero-text {
     margin-top: 0;
+    font-size: 1.6rem;
   }
 
   .symbol-container {
-    top: 5rem;
-    right: 70%;
+    left: -100px;
+    top: -60px;
   }
 
   .film-strip {
@@ -1267,7 +1291,12 @@ textarea {
   }
 
   .about-wrapper img {
-    margin-right: -15%;
+    margin-right: -10%;
+    max-width: 200px;
+  }
+
+  .btn {
+    font-size: 1.4rem;
   }
 
   /* About page */
@@ -1377,12 +1406,25 @@ textarea {
   }
 
   /* Home page */
+  .hero-img-front{
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+
   .icon-image-text {
-    padding-left: 7rem;
+    padding-left: 7.5rem;
+    font-size: 1rem;
   }
 
   .about-wrapper img {
     margin-right: -20%;
+  }
+
+  .btn {
+    display: block;
+    margin: 1rem auto 2rem;
   }
 
   /* Blog page */
@@ -1408,6 +1450,11 @@ textarea {
 
 @media screen and (max-width: 420px) {
   /* Home page */
+  .hero-text {
+    font-size: 1.4rem;
+    justify-content: center;
+  }
+
   .about-wrapper img {
     margin-right: -30%;
   }
