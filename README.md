@@ -34,7 +34,7 @@ Installing
 Clone the repo:
 
     
-    https://github.com/VaNomad/semester_project_1.git
+    https://github.com/Noroff-FEU-Assignments/project-exam-1-VaNomad.git
     
 
 Install the dependencies:
