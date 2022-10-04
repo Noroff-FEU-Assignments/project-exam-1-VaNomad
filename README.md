@@ -15,16 +15,17 @@ Description;
 
 The project aimed to overall have these implementations:
 
-    - A design that appeals to the target audience,
-    - Build a properly functioning, responsive website,
-    - Must have at least 4-6 pages,
-    - No images over 200kb,
-    - Have WCAG principles, content strategy and SEO, all taken into consideration.
+- Carousel slider
+- blog page with "load more" button functionality
+- dynamically builds using the API.
+- modals on blog posts
+- Contact form with js validation
+- hotjar 
     
 
 Built With
 
-All Html and Css is hardcoded
+Wordpress API
 
 
 Getting Started
