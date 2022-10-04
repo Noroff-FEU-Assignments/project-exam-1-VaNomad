@@ -11,7 +11,7 @@ In this Exam, we are tasked with making a blog.
 We are here implementing our html and css skills with javascript,
 and also using an API. We used Wordpress as the API for this exam.
 
-Description;
+### Description;
 
 The project aimed to overall have these implementations:
 
@@ -23,7 +23,7 @@ The project aimed to overall have these implementations:
 - hotjar 
     
 
-Built With
+### Built With
 
 - Wordpress API.
 - Nav, Footer, Home and Contact page are hardcoded.
@@ -43,13 +43,13 @@ Install the dependencies:
     npm install
     
 
-Contributing:
+### Contributing:
 
 If you want to contribute to this project, 
 make sure to open a pull request so code can be reviewed.
 
 
-Contact:
+### Contact:
 
 You can find me here if you want to get in touch:
 
@@ -58,5 +58,6 @@ You can find me here if you want to get in touch:
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
 </div>
-Sjur
+
+## Sjur
 
