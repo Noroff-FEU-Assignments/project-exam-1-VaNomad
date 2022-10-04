@@ -29,8 +29,7 @@ Built With
 - Nav, Footer, Home and Contact page are hardcoded.
 
 
-Getting Started
-Installing
+#Getting started:
 
 Clone the repo:
 
