@@ -25,7 +25,8 @@ The project aimed to overall have these implementations:
 
 Built With
 
-Wordpress API
+- Wordpress API.
+- Nav, Footer, Home and Contact page are hardcoded.
 
 
 Getting Started
